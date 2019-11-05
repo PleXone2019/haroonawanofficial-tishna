@@ -73,6 +73,7 @@ echo "y" | cpan install HTTP::Request::Common;
 echo "y" | cpan install HTTP::Status;
 echo "y" | cpan install HTML::Form;
 echo "y" | cpan install IO::Socket;
+echo "y" | cpan install IO::Socket::SecureSocks
 echo "y" | cpan install URI::URL;
 echo "y" | cpan install Mojo::DOM
 echo "y" | cpan install Data::Dumper
