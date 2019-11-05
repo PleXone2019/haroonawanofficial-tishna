@@ -85,14 +85,14 @@ echo "y" | cpan install Bundle::LWP
 
 
 echo -e "$red [$green+$red]$off Checking directories..."
-if [ -d "/usr/share/Tishna" ]; then
-    echo -e "$red [$green+$red]$off A Directory Tishna Was Found! Do You Want To Replace It? [Y/n]:" ;
+if [ -d "/usr/share/tishna" ]; then
+    echo -e "$red [$green+$red]$off A Directory tishna Was Found! Do You Want To Replace It? [Y/n]:" ;
     read replace
     if [ "$replace" = "Y" ]; then
-      sudo rm -r "/usr/share/Tishna"
-      sudo rm "/usr/share/icons/Tishna.png"
-      sudo rm "/usr/share/applications/Tishna.desktop"
-      sudo rm "/usr/local/bin/Tishna"
+      sudo rm -r "/usr/share/tishna"
+      sudo rm "/usr/share/icons/tishna.png"
+      sudo rm "/usr/share/applications/tishna.desktop"
+      sudo rm "/usr/local/bin/tishna"
 
 else
 echo -e "$red [$green+$red]$off If You Want To Install You Must Remove Previous Installations";
@@ -103,15 +103,15 @@ fi
 echo -e "$red [$green+$red]$off Installing ...";
 echo -e "$red [$green+$red]$off Creating Symbolic Link ...";
 echo -e "#!/bin/bash
-perl /usr/share/Tishna/Tishna.pl" '${1+"$@"}' > "Tishna";
-    chmod +x "Tishna";
-    sudo mkdir "/usr/share/Tishna"
-    sudo cp "installer.sh" "/usr/share/Tishna"
-    sudo cp "Tishna.pl" "/usr/share/Tishna"
-    sudo cp "config/Tishna.jpeg" "/usr/share/icons"
-    sudo cp "config/Tishna.desktop" "/usr/share/applications"
-    sudo cp "Tishna" "/usr/local/bin/"
-    rm "Tishna";
+perl /usr/share/tishna/tishna.pl" '${1+"$@"}' > "tishna";
+    chmod +x "tishna";
+    sudo mkdir "/usr/share/tishna"
+    sudo cp "installer.sh" "/usr/share/tishna"
+    sudo cp "tishna.pl" "/usr/share/tishna"
+    sudo cp "config/tishna.jpeg" "/usr/share/icons"
+    sudo cp "config/tishna.desktop" "/usr/share/applications"
+    sudo cp "tishna" "/usr/local/bin/"
+    rm "tishna";
 
 echo -e "$red [$green+$red]$off Installing dependencies..."
 echo "y" | apt-get install xdg-utils
@@ -147,33 +147,26 @@ pip install jsbeautifier
 pip install argparse
 pip install requests
 pip install request
-cd SearchEngineScrapy
-pip install -r requirements.txt
-sudo virtualenv --python="2" env
-sudo env/bin/activate
-cd ..
 chmod u+x *.sh
-cp * -r /usr/share/Tishna
-cp *.sh /usr/share/Tishna
-cat traceroute-function >> ~/.bashrc
-source ~/.bashrc
+cp * -r /usr/share/tishna
+cp *.sh /usr/share/tishna
 
-if [ -d "/usr/share/Tishna" ] ;
+if [ -d "/usr/share/tishna" ] ;
 then
-echo -e "$red [$green+$red]$off Tishna Successfully Installed, Starting";
+echo -e "$red [$green+$red]$off tishna Successfully Installed, Starting";
 sleep 2;
-Tishna
+tishna
 else
-echo -e "$red [$green+$red]$off Tishna Cannot Be Installed. Trying using Portable Edition !";
+echo -e "$red [$green+$red]$off tishna Cannot Be Installed. Trying using Portable Edition !";
     exit
 fi 
 }
 
 if [ -d "/usr/bin/" ];then
 banner
-echo -e "$red [$green+$red]$off Tishna Will Be Installed In Your System";
+echo -e "$red [$green+$red]$off tishna Will Be Installed In Your System";
 linux
 else
-echo -e "$red [$green+$red]$off Tishna Cannot Be Installed. Trying using Portable Edition !";
+echo -e "$red [$green+$red]$off tishna Cannot Be Installed. Trying using Portable Edition !";
     exit
 fi
