@@ -15,7 +15,7 @@ EULA
 </div>
 
 <div align="center">
-    <img src="https://i.ibb.co/n3MFHwr/t2.png" width="400px"</img> 
+    <img src="https://i.ibb.co/5kSZYJ2/t3.png" width="400px"</img> 
 </div>
 
 # Tishna
