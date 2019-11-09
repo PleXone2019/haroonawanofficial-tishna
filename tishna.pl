@@ -124,6 +124,10 @@ GetOptions(
     "aab|rfi=s" => \$rfi,
     "aac|lfi=s" => \$lfi,
     "aad|banar=s" => \$banar,
+    "aae|ipobfuscating=s" => \$ipobfuscating,
+    "aaf|rfi=s" => \$rfi,
+    "aag|lfi=s" => \$lfi,
+    "aah|banar=s" => \$banar,
 );
 
 if ($help) { banner();help(); }
@@ -183,6 +187,11 @@ if ($ipobfuscating) { banner();Ipobfuscating(); }
 if ($rfi) { banner();Rfi(); }
 if ($lfi) { banner();Lfi(); }
 if ($banar) { banner();Banar(); }
+if ($sarxssangularjspayloads) { banner();Sarxssangularjspayloads(); }
+if ($phantomjsxsspayloadhelper) { banner();Phantomjsxsspayloadhelper(); }
+if ($automaticangularjs) { banner();Automaticangularjs(); }
+if ($sessionhijack) { banner();Sessionhijack(); }
+if ($oauth) { banner();Oauth(); }
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -526,7 +535,43 @@ sub help {
     print color('bold red'),"        => ";
     print color("bold white"),"tishna -aac site.com";
     print color('bold cyan'),"                 #   \n";
-    
+            
+    print color('bold cyan'),"#                   ";
+    print item('56'),"Binary Buffer Overflow Finder ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"tishna -aab site.com";
+    print color('bold cyan'),"                 #   \n";
+        
+    print color('bold cyan'),"#                   ";
+    print item('57'),"Stored and Reflected XSS Angular JS Payloads ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"tishna -aad site.com";
+    print color('bold cyan'),"                 #   \n";
+
+    print color('bold cyan'),"#                   ";
+    print item('58'),"Phantom JS XSS Payload Helper ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"tishna -aae site.com";
+    print color('bold cyan'),"                 #   \n";
+        
+    print color('bold cyan'),"#                   ";
+    print item('59'),"Agular JS Client Side Automatic XSS Finder ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"tishna -aaf site.com";
+    print color('bold cyan'),"                 #   \n";
+            
+    print color('bold cyan'),"#                   ";
+    print item('60'),"Session Hijacking Burp Method ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"tishna -aag site.com";
+    print color('bold cyan'),"                 #   \n";
+        
+    print color('bold cyan'),"#                   ";
+    print item('61'),"OAUTH Injections ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"tishna -aah site.com";
+    print color('bold cyan'),"                 #   \n";
+
     
 #--------------------------------------------------------------#
 #                           Banner                             #
@@ -544,6 +589,22 @@ print qq {
 	     88,    888 88b    dP 888   "88o 888    Y88 888   888,
 	     MMM    MMM  "YMmMY"  MMM    YMM MMM     YM YMM   ""` };
 color("reset");
+print color('reset');
+print "\n\n";
+print color('bold white on_bright_red'),"	Mail          ";print color('reset'),"";print color('bright_blue'),"      mrharoonawan\@gmail.com\n";
+print color('reset');
+
+print color('bold red on_blue'),"	Homepage      ";print color('reset'),"";print color('bold red'),"      http://www.instagram.com/\Hackeruniversee\n";
+print color('reset');
+
+print color('bold yellow on_red'),"	Web           ";print color('reset'),"";print color('bold yellow'),"      http://www.mubassirkamdar.com\n";
+print color('reset');
+
+print color('bold green on_black'),"	Facebook      ";print color('reset'),"";print color('bold green'),"      fb.com/officialharoonawan\n";
+print color('reset');
+
+print color('bold white on_blue'),"	Instagram     ";print color('reset'),"";print color('bold white'),"      http://www.instagram.com/\hackerfromscratch\n";
+print color('reset');
 print "\n\n        \033[0;37m\033[0;31m [\033[1;34mArtificial Intelligence Based Web Security Swiss Knife\033[0;31m]  	  \n\n";
 print color('bold cyan'),"	     		";print color('bold yellow on_red')," Programmer: Haroon Awan  "; print color('reset')," \n\n"; 
 }
@@ -609,10 +670,15 @@ sub menu {
     print color('bold cyan'),"	|  ";print color('reset'),item('54')," RFI ";print color('bold cyan'),"                                          |   \n";    
     print color('bold cyan'),"	|  ";print color('reset'),item('55')," LFI  ";print color('bold cyan'),"                                         |   \n";   
     print color('bold cyan'),"	|  ";print color('reset'),item('56')," Binary Buffer Overflow Finder  ";print color('bold cyan'),"               |   \n";      
+    print color('bold cyan'),"	|  ";print color('reset'),item('57')," Stored and Reflected XSS Angular JS Payloads ";print color('bold cyan')," |   \n";    
+    print color('bold cyan'),"	|  ";print color('reset'),item('58')," Phantom JS XSS Payload Helper  ";print color('bold cyan'),"               |   \n";   
+    print color('bold cyan'),"	|  ";print color('reset'),item('59')," Agular JS Client Side Automatic XSS Finder  ";print color('bold cyan'),"  |   \n";          
+    print color('bold cyan'),"	|  ";print color('reset'),item('60')," Session Hijacking Burp Method  ";print color('bold cyan'),"               |   \n";          
+    print color('bold cyan'),"	|  ";print color('reset'),item('61')," OAUTH Injections  ";print color('bold cyan'),"                            |   \n";          
     print color('bold cyan'),"	|  ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                            |   \n",line_d();
     print color('bold green'),"\n\ntishna: _>  ";
     print color('reset');
-
+    
     chomp($number=<STDIN>);
 
     if($number eq '1'){
@@ -1118,6 +1184,51 @@ sub menu {
         chomp($banar=<STDIN>);
         print "\n";
         Banar();
+        enter();
+     }if($number eq '57'){
+        banner();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print color('bold green'),"\n\ntishna: _>  ";
+        print color('bold white');
+        chomp($sarxssangularjspayloads=<STDIN>);
+        print "\n";
+        Sarxssangularjspayloads();
+        enter();
+     }if($number eq '58'){
+        banner();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print color('bold green'),"\n\ntishna: _>  ";
+        print color('bold white');
+        chomp($phantomjsxsspayloadhelper=<STDIN>);
+        print "\n";
+        Phantomjsxsspayloadhelper();
+        enter();
+     }if($number eq '59'){
+        banner();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print color('bold green'),"\n\ntishna: _>  ";
+        print color('bold white');
+        chomp($automaticangularjs=<STDIN>);
+        print "\n";
+        Automaticangularjs();
+        enter();
+     }if($number eq '60'){
+        banner();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print color('bold green'),"\n\ntishna: _>  ";
+        print color('bold white');
+        chomp($sessionhijack=<STDIN>);
+        print "\n";
+        Sessionhijack();
+        enter();
+     }if($number eq '61'){
+        banner();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print color('bold green'),"\n\ntishna: _>  ";
+        print color('bold white');
+        chomp($oauth=<STDIN>);
+        print "\n";
+        Oauth();
         enter();
    }
       if($number eq '0'){
@@ -2569,19 +2680,6 @@ sub Cookiestealer ( ) {
 	}
 }
 
-#-------------------------------------------------------------------------------#
-# 2 Session Hijacking                                       		            #
-#-------------------------------------------------------------------------------#
-sub not_implemented ( ) {
-	if (system("./sessions.sh") == 0) {
-    print "\n";
-	print item(), "Success!\n";
-	}
-	else {
-	print "\n\n";
-	print item(), "Error, Command Failed\n";
-	}
-}
 
 #-------------------------------------------------------------------------------#
 # 26 Command Inections Exploits                              		            #
@@ -3290,6 +3388,93 @@ sub bbinary () {
 	}
 }
 
+#------------------------------------------------------#
+# 57 Stored and Reflected XSS Angular JS Payloads      #
+#------------------------------------------------------#
+sub sarxssangularjspayloads () { 
+	if (system("cat angularxsspayloads") == 0) {
+    print "\n";
+	print item(), "Success!\n";
+	}
+	else {
+	print "\n\n";
+	print item(), "Error, Command Failed\n";
+	}
+}
+
+
+#-----------------------------------------------#
+# 58 Phantom JS XSS Payload Helper              #
+#-----------------------------------------------#
+sub phantomjsxsspayloadhelper () { 
+	if (system("./phantomxsspayload.sh") == 0) {
+    print "\n";
+	print item(), "Success!\n";
+	}
+	else {
+	print "\n\n";
+	print item(), "Error, Command Failed\n";
+	}
+}
+
+
+#--------------------------------------------------#
+# 59 Angular JS Client SIde Automatic XSS Finder   #
+#--------------------------------------------------#
+sub automaticangularjs () { 
+	print item(),"1 - Angular JS XSS Finder with Parameter \n";
+	print item(),"1 - Angular JS XSS Finder wth Domain Crawler \n";
+	print item(),"Enter Option: ";
+	chomp($opt=<STDIN>);
+	if ($opt =~1) {
+	if (system("./angularjs1.sh") == 0) {
+    print "\n";
+	print item(), "Success!\n";
+	}
+	else {
+	print "\n\n";
+	print item(), "Error, Command Failed\n";
+	}
+}
+	if ($opt =~2) {
+	if (system("./angularjs.sh") == 0) {
+    print "\n";
+	print item(), "Success!\n";
+	}
+	else {
+	print "\n\n";
+	print item(), "Error, Command Failed\n";
+	}
+}
+}
+
+#-----------------------------------------------#
+# 60 Session Hijacking Burp Method              #
+#-----------------------------------------------#
+sub sessionhijack ( ) {
+	if (system("./sessions.sh") == 0) {
+    print "\n";
+	print item(), "Success!\n";
+	}
+	else {
+	print "\n\n";
+	print item(), "Error, Command Failed\n";
+	}
+}
+
+#-----------------------------------------------#
+# 61 OAUTH Injections                           #
+#-----------------------------------------------#
+sub oauth ( ) {
+	if (system("./oauth.sh") == 0) {
+    print "\n";
+	print item(), "Success!\n";
+	}
+	else {
+	print "\n\n";
+	print item(), "Error, Command Failed\n";
+	}
+}
 
 
 #--------------------------------------------------------------#
