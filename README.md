@@ -1,5 +1,5 @@
 # Tishna
- Complete Automated pentest framework for Servers and Web Application Security
+ Complete Automated pentest framework for Servers, Application Layer to Web Security
 
 # LICENSE
 EULA
