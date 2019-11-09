@@ -127,6 +127,7 @@ echo "y" | apt-get install curl
 echo "y" | apt-get install nfs-common
 echo "y" | apt-get install smbclient
 echo "y" | apt-get install perl-LWP-Protocol-https
+echo "y" | git clone https://github.com/tijme/angularjs-csti-scanner.git
 echo "y" | git clone https://github.com/maxwellkoh/2FAssassin.git
 echo "y" | git clone https://github.com/ticarpi/jwt_tool.git
 echo "y" | git clone https://github.com/almandin/fuxploider.git
@@ -148,6 +149,7 @@ pip install jsbeautifier
 pip install argparse
 pip install requests
 pip install request
+pip install colorlog
 chmod u+x *.sh
 cp * -r /usr/share/tishna
 cp *.sh /usr/share/tishna
