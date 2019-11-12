@@ -1267,7 +1267,7 @@ $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/
 print color("BOLD RED"), "\n\n								[ + ] Checking OPTIONS method [ + ]  \n\n";
 print color("BOLD RED"), "								=================================== \n";
 print color("reset");
-my $req = HTTP::Request->new(OPTIONS => $ei);
+my $req = HTTP::Request->new(OPTIONS => $extractresponsesheader);
 my $res = $ua->request($req);
 print $res->as_string (), "\n"; #show http request and response 
 color("reset");
@@ -1278,7 +1278,7 @@ print "\n\n";
 print color("BOLD RED"), "\n								[ + ] Checking PUT method [ + ]  \n\n";
 print color("BOLD RED"), "								=================================== \n";
 print color("reset");
-my $req = POST($ei, Content => [param => 'hello']);
+my $req = POST($extractresponsesheader, Content => [param => 'hello']);
 $req->method('PUT');
 say($req->as_string);
 print $res->as_string (), "\n"; #show http request and response 
@@ -1287,7 +1287,7 @@ print "\n\n";
 print color("BOLD RED"), "\n								[ + ] Checking HEAD method [ + ]  \n\n";
 print color("BOLD RED"), "								=================================== \n";
 print color("reset");
-my $req = HTTP::Request->new(HEAD => $ei);
+my $req = HTTP::Request->new(HEAD => $extractresponsesheader);
 my $res = $ua->request($req);
 print $res->as_string (), "\n"; #show http request and response 
 print "\n\n";
@@ -1295,7 +1295,7 @@ print "\n\n";
 print color("BOLD RED"), "\n								[ + ] Checking TRACE method [ + ]  \n\n";
 print color("BOLD RED"), "								=================================== \n";
 print color("reset");
-my $req = HTTP::Request->new(TRACE => $ei);
+my $req = HTTP::Request->new(TRACE => $extractresponsesheader);
 my $res = $ua->request($req);
 print $res->as_string (), "\n"; #show http request and response 
 print "\n\n";
@@ -1303,7 +1303,7 @@ print "\n\n";
 print color("BOLD RED"), "\n								[ + ] Checking JEFF method [ + ]  \n\n";
 print color("BOLD RED"), "								=================================== \n";
 print color("reset");
-my $req = HTTP::Request->new(JEFF => $ei);
+my $req = HTTP::Request->new(JEFF => $extractresponsesheader);
 my $res = $ua->request($req);
 print $res->as_string (), "\n"; #show http request and response 
 print "\n\n";
@@ -1311,7 +1311,7 @@ print "\n\n";
 print color("BOLD RED"), "\n								[ + ] Checking FOOBAR method [ + ]  \n\n";
 print color("BOLD RED"), "								=================================== \n";
 print color("reset");
-my $req = HTTP::Request->new(FOOBAR => $ei);
+my $req = HTTP::Request->new(FOOBAR => $extractresponsesheader);
 my $res = $ua->request($req);
 print $res->as_string (), "\n";
 print $res->as_string (), "\n"; #show http request and response 
@@ -1320,7 +1320,7 @@ print "\n\n";
 print color("BOLD RED"), "\n								[ + ] Checking CATS method [ + ]  \n\n";
 print color("BOLD RED"), "								=================================== \n";
 print color("reset");
-my $req = HTTP::Request->new(CATS => $ei);
+my $req = HTTP::Request->new(CATS => $extractresponsesheader);
 my $res = $ua->request($req);
 print $res->as_string (), "\n"; #show http request and response 
 print "\n\n";
@@ -1334,7 +1334,7 @@ print "\n\n";
 #-----------------------------------------------#
 sub Extractimages( ) {
 my $mech = WWW::Mechanize->new(); # always define
-$mech->get( $if );
+$mech->get( $extractimages );
 $mech->dump_images();
 print "\n\n";
  }
@@ -1346,7 +1346,7 @@ print "\n\n";
 #-----------------------------------------------#
 sub Extracturls( ) {
 my $mech = WWW::Mechanize->new(); # always define
-$mech->get( $ecl ); # to get something, url means absolute url value
+$mech->get( $extracturls ); # to get something, url means absolute url value
 $mech->dump_links();
 print "\n\n";
 } 
@@ -1358,7 +1358,7 @@ print "\n\n";
 #-----------------------------------------------#
 sub Identifyform( ) {
 my $mech = WWW::Mechanize->new(); # always define
-$mech->get( $rsa );
+$mech->get( $identifyform );
 print "\n";
 $mech->dump_forms;
     print "\n\n";
@@ -1767,7 +1767,7 @@ close($sock);
 # 10 Cache Poison Defacer                       #
 #                                               #
 #-----------------------------------------------#
-sub C ( ) {
+sub Cachepoisondefacer ( ) {
 	print "\n";
 	print item(), "Caution\n";
 	print item(), "For HTTPS, use Local Proxy\n";
@@ -2270,7 +2270,7 @@ $| = 1; # Clear the buffer here
 my $ua = LWP::UserAgent->new;
 $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/31.0.");
 print "\n",item(),"Checking PUT for File Upload\n";
-my $req = POST($bbhmi, Content => [param => 'hello']);
+my $req = POST($httpmethodsinformation, Content => [param => 'hello']);
 my $res = $ua->request($req);
 $req->method('PUT');
 print item(),"Requested Data \n";
@@ -3107,8 +3107,8 @@ exit;
 #-----------------------------------------------#
 sub Downloadlinksexif( ) {
 my %images = (); 
-my $html = get($url) 
-  or die "could not get $url\n";
+my $html = get($downloadlinksexif) 
+  or die "could not get $downloadlinksexif\n";
 
 my $parser = HTML::LinkExtor->new(undef, $url);
 $parser->parse($html);
@@ -3277,7 +3277,7 @@ print color("BOLD RED"), "\n\n								[ + ] Fuzzing HTTP Request Methods [ + ]  
 print color("BOLD RED"), "								============================== \n";
 print color("reset");
 my $req = HTTP::Request->new(
-GET => $url,
+GET => $httpfuzzer,
 HTTP::Headers->new(Host => google.com),
 HTTP::Headers->new(Accept => "%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E"),
 HTTP::Headers->new(Referer => "%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E"),
