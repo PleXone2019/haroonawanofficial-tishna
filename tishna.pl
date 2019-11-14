@@ -1375,7 +1375,7 @@ my $ua = LWP::UserAgent->new;
 $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/31.0.");
 my $mech = WWW::Mechanize->new();
 #my $checker = HTML::Form::XSS->new($mech, config => '/home/config.xml');
-$mech->get( $drsa );
+$mech->get( $findxssinforms );
 my @forms = $mech->forms();
 foreach my $form (@forms){
 	print item(), "Forms Identified \n";
