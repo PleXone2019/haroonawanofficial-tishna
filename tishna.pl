@@ -2716,7 +2716,7 @@ sub Showjson ( ) {
 sub Blindxxeinjection ( ) {
 	print item(), "1 - XXE Injector\n";
 	print item(), "2 - XXE Payload Sender\n";
-	print item(), "Select An Option\n";
+	print item(), "Select An Option : ";
 	chomp($enter=<STDIN>);
     if ($enter =~1) {	
 	if (system("./xxeinjector.sh") == 0) {
