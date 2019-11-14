@@ -2729,8 +2729,8 @@ sub Blindxxeinjection ( ) {
 	}
 }
     if ($enter =~2) {	
-	print item(), "Copy and Paste command in your terminal with specified payload\n";
-    print item(), "Refer to manual or guide \n";
+	print item(), "Copy, paste command in your terminal from xxe_payloads_curl folder, refer to manual/guide\n";
+    print item(), "where file_path_here is your xxe_payloads_curl, refer to manual/guide \n";
 	if (system("cat curl_sender") == 0) {
     print "\n";
 	print item(), "Success!\n";
