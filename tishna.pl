@@ -2474,7 +2474,7 @@ sub Loadcsrfhtmltemplates ( ) {
 	print item(), "an end user to execute unwanted actions on a web application in which they are\n"; 
 	print item(), "currently authenticated. CSRF attacks specifically target state-changing requests\n"; 
 	print item(), "not theft of data, since the attacker has no way to see the response to the forged request\n\n";
-	print item(),"\n\nTemplates";			
+	print item(),"Templates\n";			
 	print item(),"1 - HTML GET - Requiring User Interaction\n";
 	print item(),"2 - HTML GET - No User Interaction\n";
 	print item(),"3 - HTML POST - Requiring User Interaction\n";
@@ -2484,7 +2484,7 @@ sub Loadcsrfhtmltemplates ( ) {
 	print item(),"7 - JSON POST - Complex Request\n";
 	print item(),"8 - XSS to CSRF Token Hijack Request\n";
 	print item(),"9 - HTML Methods\n";
-	print item(),"Enter Option: ";	
+	print item(),"Select An Option: ";	
         chomp($enter=<STDIN>);	
 	if ($enter =~1) {
 	if (system("cat htmlget_requireuserinteraction") == 0) {
