@@ -2,4 +2,4 @@
 cd optionsbleed/
 echo ""
 read -p "[ + ] Enter Target Again: " Target
-./optionsbleed -u $Target
+./optionsbleed -n 40 -a -u $Target
