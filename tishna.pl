@@ -2302,7 +2302,7 @@ if( $res->as_string () =~ m/1.1 200 OK/gi ) {
 
 $| = 1; # Clear the buffer here        
 print "\n",item(),"Checking HEAD for Header Injections\n";
-my $req = HTTP::Request->new(HEAD => $bbhmi);
+my $req = HTTP::Request->new(HEAD => $httpmethodsinformation);
 print item(),"Requested Data \n";
 print $req->as_string ();    
 print item(),"Response Data \n";
@@ -2316,13 +2316,13 @@ if( $res->as_string () =~ m/1.1 200 OK/gi ) {
 
 $| = 1; # Clear the buffer here    
 print "\n",item(),"Checking TRACE for Cross Site Tracing\n";
-my $req = HTTP::Request->new(TRACE => $bbhmi);
+my $req = HTTP::Request->new(TRACE => $httpmethodsinformation);
 print item(),"Requested Data \n";
 print $req->as_string ();    
 print item(),"Response Data \n";
 print $res->as_string (), "\n"; #show http request and response 
 print "\n\n";	
-system "curl -v -X TRACE -H 'Header: value=Testing' $bbhmi/";
+system "curl -v -X TRACE -H 'Header: value=Testing' $httpmethodsinformation/";
 if( $res->as_string () =~ m/1.1 200 OK/gi ) {
 	print item(), "Reflection found of HTTP 200 OK, do confirm manually", "\n";
     print item(), "Press <Enter> or <Return> to continue: ";
@@ -2332,7 +2332,7 @@ if( $res->as_string () =~ m/1.1 200 OK/gi ) {
 $| = 1; # Clear the buffer here        
 print "\n",item(),"Checking Options Bleed with Output\n";
 if (system("./optionsbleed.sh") == 0) {
-	print item(), "success!\n";
+	#print item(), "success!\n";
 	}
 	else {
 	print "\n",item(),"Make optionsbleed.sh in same folder\n";
@@ -2344,6 +2344,8 @@ if (system("./optionsbleed.sh") == 0) {
 	print item(), "Press <Enter> or <Return> to continue: ";
     my $resp = <STDIN>;
     }
+    print item(), "No Reflections Found!\n";
+    print item(), "Payload was success!\n";
 }
 
 
