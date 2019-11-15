@@ -2273,23 +2273,26 @@ $| = 1; # Clear the buffer here
 my $ua = LWP::UserAgent->new;
 $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/31.0.");
 print "\n",item(),"Checking PUT for File Upload\n";
-my $req = POST($httpmethodsinformation, Content => [param => 'hello']);
+my $req = PUT($httpmethodsinformation, Content => [param => 'hello']);
 my $res = $ua->request($req);
 $req->method('PUT');
 print item(),"Requested Data \n";
 print $req->as_string ();    
 print item(),"Response Data \n";
 print $res->as_string (), "\n"; #show http request and response 
-print "\n\n";	
+print "\n";	
+print item(),"Requested Data \n";
+print $req->as_string ();    
+print "\n";	
 if( $res->as_string () =~ m/1.1 200 OK/gi ) {
 	print item(), "Reflection found of HTTP 200 OK, do confirm manually", "\n";
     print item(), "Press <Enter> or <Return> to continue: ";
     my $resp = <STDIN>;
     }    
 
-$| = 1; # Clear the buffer here    
+#$| = 1; # Clear the buffer here    
 print "\n",item(),"Checking PUT for File Upload Another Method\n";
-system "curl -T filename.txt $bbhmi";
+system ("curl $httpmethodsinformation '--upload-file' 'filename.txt'");
 if( $res->as_string () =~ m/1.1 200 OK/gi ) {
 	print "\n";
 	print item(), "Reflection found of HTTP 200 OK, do confirm manually", "\n";
