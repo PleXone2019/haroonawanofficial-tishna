@@ -619,8 +619,8 @@ sub menu {
     print color('bold cyan'),"	|  ";print color('reset'),item('3')," Extract Images";print color('bold cyan'),"                                 |   \n";
     print color('bold cyan'),"	|  ";print color('reset'),item('4')," Extract URLS";print color('bold cyan'),"                                   |   \n";
     print color('bold cyan'),"	|  ";print color('reset'),item('5')," Identify Form";print color('bold cyan'),"                                  |   \n";
-    print color('bold cyan'),"	|  ";print color('reset'),item('6')," Find XSS in Forms";print color('bold cyan'),"                              |   \n";
-    print color('bold cyan'),"	|  ";print color('reset'),item('7')," Find XSS in Web";print color('bold cyan'),"                                |   \n";
+    print color('bold cyan'),"	|  ";print color('reset'),item('6')," Find XSS in Forms Advanced Attack";print color('bold cyan'),"              |   \n";
+    print color('bold cyan'),"	|  ";print color('reset'),item('7')," Find XSS in Forms Simple Attack";print color('bold cyan'),"                |   \n";
     print color('bold cyan'),"	|  ";print color('reset'),item('8')," Web Server Mount Response Splitting Attack";print color('bold cyan'),"     |   \n";
     print color('bold cyan'),"	|  ";print color('reset'),item('9')," Header Inject Poison";print color('bold cyan'),"                           |   \n";
     print color('bold cyan'),"	|  ";print color('reset'),item('10')," Cache Poison Defacer";print color('bold cyan'),"                          |   \n";
@@ -740,7 +740,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($findxssinweb=<STDIN>);
+        #chomp($findxssinweb=<STDIN>);
         print "\n";
         Findxssinweb();
         enter();
