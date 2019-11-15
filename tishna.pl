@@ -812,7 +812,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($csrfinjection=<STDIN>);
+        #chomp($csrfinjection=<STDIN>);
         print "\n";
         Csrfinjection();
         enter(); 
@@ -2358,8 +2358,8 @@ sub Csrfinjection ( ) {
 	$| = 1; # Clear the buffer here
 my $ua = LWP::UserAgent->new;
 $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/31.0.");
+	print item(),"Caution: You will need java or php file for injection in your server/outbound connection";
 	print "\n";
-	print item(),"Caution: You will need java or php file for injection in your server/outbound connection\n";
 	print item(),"Enter URL: ";
 	chomp($url=<STDIN>);
 	print item(),"Enter File Name: ";
