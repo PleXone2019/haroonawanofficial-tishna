@@ -2380,7 +2380,16 @@ $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/
 	chomp($attackerfile=<STDIN>);	   
 	print item(),"Enter Cookie or leave blank: ";
 	chomp($cookie=<STDIN>);	   
-	
+	print item(),"Enter Post Body Values: ";
+	chomp($values=<STDIN>);	   
+	#print item(),"Enter Parameter1: ";
+	#chomp($param1=<STDIN>);	   
+	#print item(),"Enter Parameter1 value: ";
+	#chomp($paramv1=<STDIN>);	   
+	#print item(),"Enter Parameter2: ";
+	#chomp($param2=<STDIN>);	   
+	#print item(),"Enter Parameter2 value: ";
+	#chomp($paramv2=<STDIN>);	   	
 
 use IO::Socket;
 my $sock = new IO::Socket::INET (
@@ -2418,6 +2427,14 @@ if ($enter =~2) {
 	chomp($attackerfile=<STDIN>);	   
 	print item(),"Enter Cookie or leave blank: ";
 	chomp($cookie=<STDIN>);	   
+	#print item(),"Enter Parameter1: ";
+	#chomp($param1=<STDIN>);	   
+	#print item(),"Enter Parameter1 value: ";
+	#chomp($paramv1=<STDIN>);	   
+	#print item(),"Enter Parameter2: ";
+	#chomp($param2=<STDIN>);	   
+	#print item(),"Enter Parameter2 value: ";
+	#chomp($paramv2=<STDIN>);	   	
 	
 use IO::Socket::SecureSocks;
 my $socket = IO::Socket::SecureSocks->new(
@@ -2465,6 +2482,7 @@ sub Loadcsrfhtmltemplates ( ) {
 	print item(),"5 - JSON GET - Simple Request\n";
 	print item(),"6 - JSON POST - Simple Request\n";
 	print item(),"7 - JSON POST - Complex Request\n";
+	print item(),"8 - XSS to CSRF Token Hijack Request\n";
 	print item(),"Enter Option: ";	
         chomp($enter=<STDIN>);	
 	if ($enter =~1) {
@@ -2538,6 +2556,17 @@ sub Loadcsrfhtmltemplates ( ) {
 	print item(), "Press Enter to Return\n";
 	}
 }
+	if ($enter =~8) {
+    if (system("cat xss_to_csrf_token_hijack") == 0) {
+	print "\n";
+	print item(),"success!\n";	
+	}
+		else {
+	print "\n\n";
+	print item(), "Press Enter to Return\n";
+	}
+}
+
 }
 
 #-----------------------------------------------#
