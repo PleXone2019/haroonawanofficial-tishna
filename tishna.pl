@@ -2483,6 +2483,7 @@ sub Loadcsrfhtmltemplates ( ) {
 	print item(),"6 - JSON POST - Simple Request\n";
 	print item(),"7 - JSON POST - Complex Request\n";
 	print item(),"8 - XSS to CSRF Token Hijack Request\n";
+	print item(),"9 - HTML Methods\n";
 	print item(),"Enter Option: ";	
         chomp($enter=<STDIN>);	
 	if ($enter =~1) {
@@ -2566,7 +2567,16 @@ sub Loadcsrfhtmltemplates ( ) {
 	print item(), "Press Enter to Return\n";
 	}
 }
-
+	if ($enter =~9) {
+    if (system("cat htmlmethods") == 0) {
+	print "\n";
+	print item(),"success!\n";	
+	}
+		else {
+	print "\n\n";
+	print item(), "Press Enter to Return\n";
+	}
+}
 }
 
 #-----------------------------------------------#
