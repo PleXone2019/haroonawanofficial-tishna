@@ -821,7 +821,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($loadcsrfhtmltemplates=<STDIN>);
+        #chomp($loadcsrfhtmltemplates=<STDIN>);
         print "\n";
         Loadcsrfhtmltemplates();
         enter();        
