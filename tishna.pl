@@ -2380,14 +2380,7 @@ $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/
 	chomp($attackerfile=<STDIN>);	   
 	print item(),"Enter Cookie or leave blank: ";
 	chomp($cookie=<STDIN>);	   
-	print item(),"Enter Parameter1: ";
-	#chomp($param1=<STDIN>);	   
-	#print item(),"Enter Parameter1 value: ";
-	#chomp($paramv1=<STDIN>);	   
-	#print item(),"Enter Parameter2: ";
-	#chomp($param2=<STDIN>);	   
-	#print item(),"Enter Parameter2 value: ";
-	#chomp($paramv2=<STDIN>);	   
+	
 
 use IO::Socket;
 my $sock = new IO::Socket::INET (
@@ -2425,7 +2418,6 @@ if ($enter =~2) {
 	chomp($attackerfile=<STDIN>);	   
 	print item(),"Enter Cookie or leave blank: ";
 	chomp($cookie=<STDIN>);	   
-	print item(),"Enter Parameter1: ";
 	
 use IO::Socket::SecureSocks;
 my $socket = IO::Socket::SecureSocks->new(
@@ -2433,6 +2425,7 @@ my $socket = IO::Socket::SecureSocks->new(
 								ConnectPort => 443,
 								Timeout     => 10
                                 ) or die "Could not create secure socket: $!\n" unless $sock;
+                                
 print $sock "POST /$filename HTTP/1.1\r\n\r\n";
 print $sock "Host: $url\r\n\r\n";
 print $sock "Origin: $attacker\r\n\r\n";
@@ -2445,8 +2438,12 @@ print $sock "$values\r\n\r\n";
 #echo -e "HEAD / HTTP/1.1\nHost: 10.1.1.2\nConnection: close\n\n\n\n" | netcat 10.1.1.2 80
 #echo -e "POST / HTTP/1.1\nHost: google.com\nOrigin: google.com\nReferer: google.com\n Cookie: SESSION=\nContent-Type: application/x-www-form-urlencoded\nhi=hi\n\n\n\n" | netcat 10.1.1.2 80
 
+print while <$sock>;
+close($sock);
 }
+
 }
+
 
 
 #-----------------------------------------------#
