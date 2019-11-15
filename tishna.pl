@@ -776,7 +776,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($crlfrsaf=<STDIN>);
+        #chomp($crlfrsaf=<STDIN>);
         print "\n";
         Crlfrsaf();
         enter();
@@ -785,7 +785,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($httprsf=<STDIN>);
+        #chomp($httprsf=<STDIN>);
         print "\n";
         Httprsf();
         enter();
@@ -2216,7 +2216,7 @@ $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/
 	$| = 1; # Clear the buffer here
 	print item(),"Starting Curl Based Payloads \n";
 	sleep 5;	
-	system "curl '$url' --data-bbinary @request"; # curl based buffer exploit for IIS servers
+	system "curl '$url' --data-binary @request"; # curl based buffer exploit for IIS servers
 
 if ( $res->as_string () =~ m/rel='canonical'/ ) {
 print color("BOLD WHITE"), "\n\n[ + ] The result could be canonical and false positive", "\n";
