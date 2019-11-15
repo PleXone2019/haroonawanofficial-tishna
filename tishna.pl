@@ -2474,6 +2474,9 @@ sub Loadcsrfhtmltemplates ( ) {
 	print item(), "an end user to execute unwanted actions on a web application in which they are\n"; 
 	print item(), "currently authenticated. CSRF attacks specifically target state-changing requests\n"; 
 	print item(), "not theft of data, since the attacker has no way to see the response to the forged request\n\n";
+	print item(), "Post Method: Simply make your CSRF request in form and host it onto your web, visit yourself, attack runs\n";
+	print item(), "Get Method: It require user interaction, or user simply visit your malicious web\n\n";
+	print item(), "Tip: CSRF works in stored XSS, get, post, fuzz, referer bypass, session mismatch, 90% all time. \n\n";
 	print item(),"Templates\n";			
 	print item(),"1 - HTML GET - Requiring User Interaction\n";
 	print item(),"2 - HTML GET - No User Interaction\n";
