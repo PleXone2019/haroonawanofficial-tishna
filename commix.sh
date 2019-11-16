@@ -2,8 +2,7 @@
 echo -ne "[+] Enter URL w/ or w/ parameter: "
 read target
 echo -e "[~] Testing all payloads with tamper methods"
-echo -e "[~] Files will be created as results 1 to 15 in txt format"
-echo -e "[~] Automating results"
+echo -e "[~] Files will be created: results 1 to 15.txt"
 echo -e "[~] Please wait, this may take a while..."
 echo "";
 commix -u $target --all --tamper=base64encode.py > 1.txt
