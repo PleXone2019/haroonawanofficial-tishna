@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e "[+] Entar Target: "
+echo -ne "[+] Entar Target: "
 read target
 echo -e "[+] Testing all payloads"
 python3 ssrfmap.py -r data/request2.txt -p https://$target -m portscan"
