@@ -628,7 +628,7 @@ sub menu {
     print color('bold cyan'),"	|  ";print color('reset'),item('12')," HTTP Response Smuggling Fuzzing";print color('bold cyan'),"               |   \n";                    
     print color('bold cyan'),"	|  ";print color('reset'),item('13')," Web Cache Deception Attack Check";print color('bold cyan'),"              |   \n";
     print color('bold cyan'),"	|  ";print color('reset'),item('14')," HTTP Methods Information";print color('bold cyan'),"                      |   \n";
-    print color('bold cyan'),"	|  ";print color('reset'),item('15')," CSRF Injection";print color('bold cyan'),"                                |   \n";
+    print color('bold cyan'),"	|  ";print color('reset'),item('15')," Custom CSRF Injection Request";print color('bold cyan'),"                 |   \n";
     print color('bold cyan'),"	|  ";print color('reset'),item('16')," Load CSRF HTML Templates";print color('bold cyan'),"                      |   \n";
     print color('bold cyan'),"	|  ";print color('reset'),item('17')," Shell Shock";print color('bold cyan'),"                                   |   \n";
     print color('bold cyan'),"	|  ";print color('reset'),item('18')," Cross Site Request Forgery Audit Toolkit	";print color('bold cyan'),"| \n";
@@ -830,7 +830,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($shellshock=<STDIN>);
+        #chomp($shellshock=<STDIN>);
         print "\n";
         Shellshock();
         enter();        
@@ -839,7 +839,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($csrfat=<STDIN>);
+        #chomp($csrfat=<STDIN>);
         print "\n";
         Csrfat();
         enter();
@@ -848,7 +848,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($fahttpm=<STDIN>);
+        #chomp($fahttpm=<STDIN>);
         print "\n";
         Fahttpm();
         enter();
@@ -857,7 +857,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($findxssinparameters=<STDIN>);
+        #chomp($findxssinparameters=<STDIN>);
         print "\n";
         Findxssinparameters();
         enter();
@@ -866,7 +866,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($findmissinghttpsmethods=<STDIN>);
+        #chomp($findmissinghttpsmethods=<STDIN>);
         print "\n";
         Findmissinghttpsmethods();
         enter();
@@ -875,7 +875,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($ssrf=<STDIN>);
+        #chomp($ssrf=<STDIN>);
         print "\n";
         Ssrf();
         enter();
@@ -884,7 +884,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($fahttpsmethods=<STDIN>);
+        #chomp($fahttpsmethods=<STDIN>);
         print "\n";
         Fahttpsmethods();
         enter();
@@ -893,7 +893,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($auditxmlrpc=<STDIN>);
+        #chomp($auditxmlrpc=<STDIN>);
         print "\n";
         Auditxmlrpc();
         enter();
@@ -902,7 +902,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($cookiestealer=<STDIN>);
+        #chomp($cookiestealer=<STDIN>);
         print "\n";
         Cookiestealer();
         enter();
@@ -911,7 +911,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($commandinection=<STDIN>);
+        #chomp($commandinection=<STDIN>);
         print "\n";
         Commandinection();
         enter();
@@ -920,7 +920,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($showjson=<STDIN>);
+        #chomp($showjson=<STDIN>);
         print "\n";
         Showjson();
         enter();
@@ -929,7 +929,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($blindxxeinjection=<STDIN>);
+        #chomp($blindxxeinjection=<STDIN>);
         print "\n";
         Blindxxeinjection();
         enter();
@@ -938,7 +938,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($fileupload=<STDIN>);
+        #chomp($fileupload=<STDIN>);
         print "\n";
         Fileupload();
         enter();
@@ -947,7 +947,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($pssti=<STDIN>);
+        #chomp($pssti=<STDIN>);
         print "\n";
         Pssti();
         enter();
@@ -956,7 +956,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($jsonwebtoken=<STDIN>);
+        #chomp($jsonwebtoken=<STDIN>);
         print "\n";
         Jsonwebtoken();
         enter();
@@ -965,7 +965,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($pwebsocket=<STDIN>);
+        #chomp($pwebsocket=<STDIN>);
         print "\n";
         Pwebsocket();
         enter();
@@ -974,7 +974,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($amazonbucket=<STDIN>);
+        #chomp($amazonbucket=<STDIN>);
         print "\n";
         Amazonbucket();
         enter();
@@ -983,7 +983,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($extractcname=<STDIN>);
+        #chomp($extractcname=<STDIN>);
         print "\n";
         Extractcname();
         enter();
@@ -992,7 +992,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($idorburp=<STDIN>);
+        #chomp($idorburp=<STDIN>);
         print "\n";
         Idorburp();
         enter();
@@ -1001,7 +1001,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($performcsv=<STDIN>);
+        #chomp($performcsv=<STDIN>);
         print "\n";
         Performcsv();
         enter();
@@ -1010,7 +1010,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($pxpath=<STDIN>);
+        #chomp($pxpath=<STDIN>);
         print "\n";
         Pxpath();
         enter();
@@ -1019,7 +1019,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($findbugs=<STDIN>);
+        #chomp($findbugs=<STDIN>);
         print "\n";
         Findbugs();
         enter();
@@ -1028,7 +1028,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($xpathsql=<STDIN>);
+        #chomp($xpathsql=<STDIN>);
         print "\n";
         Xpathsql();
         enter();
@@ -1037,7 +1037,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($ffa=<STDIN>);
+        #chomp($ffa=<STDIN>);
         print "\n";
         Ffa();
         enter();
@@ -1046,7 +1046,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($wafbypass=<STDIN>);
+        #chomp($wafbypass=<STDIN>);
         print "\n";
         Wafbypass();
         enter();
@@ -1055,7 +1055,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($storedxsspayloads=<STDIN>);
+        #chomp($storedxsspayloads=<STDIN>);
         print "\n";
         Storedxsspayloads();
         enter();
@@ -1064,7 +1064,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($reflectedxsspayloads=<STDIN>);
+        #chomp($reflectedxsspayloads=<STDIN>);
         print "\n";
         Reflectedxsspayloads();
         enter();
@@ -1073,7 +1073,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($wafbypass=<STDIN>);
+        #chomp($wafbypass=<STDIN>);
         print "\n";
         Wafbypass();
         enter();
@@ -1082,7 +1082,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($findxxsrs=<STDIN>);
+        #chomp($findxxsrs=<STDIN>);
         print "\n";
         Findxxsrs();
         enter();
@@ -1163,7 +1163,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($rfi=<STDIN>);
+        #chomp($rfi=<STDIN>);
         print "\n";
         Rfi();
         enter();
@@ -1172,7 +1172,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($lfi=<STDIN>);
+        #chomp($lfi=<STDIN>);
         print "\n";
         Lfi();
         enter();
@@ -1181,7 +1181,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($banar=<STDIN>);
+        #chomp($banar=<STDIN>);
         print "\n";
         Banar();
         enter();
@@ -1190,7 +1190,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($sarxssangularjspayloads=<STDIN>);
+        #chomp($sarxssangularjspayloads=<STDIN>);
         print "\n";
         Sarxssangularjspayloads();
         enter();
@@ -1199,7 +1199,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($phantomjsxsspayloadhelper=<STDIN>);
+        #chomp($phantomjsxsspayloadhelper=<STDIN>);
         print "\n";
         Phantomjsxsspayloadhelper();
         enter();
@@ -1208,7 +1208,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($automaticangularjs=<STDIN>);
+        #chomp($automaticangularjs=<STDIN>);
         print "\n";
         Automaticangularjs();
         enter();
@@ -1217,7 +1217,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($sessionhijack=<STDIN>);
+        #chomp($sessionhijack=<STDIN>);
         print "\n";
         Sessionhijack();
         enter();
@@ -1226,7 +1226,7 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($oauth=<STDIN>);
+        #chomp($oauth=<STDIN>);
         print "\n";
         Oauth();
         enter();
@@ -2595,7 +2595,7 @@ sub Shellshock ( ) {
 	print item(),"1 - ShellShocker Type 1\n";
 	print item(),"2 - ShellShocker Type 2\n";
 	print item(),"Enter Option: ";	
-        chomp($enter=<STDIN>);	
+    chomp($enter=<STDIN>);	
 	if ($enter =~1) {
 	print "\n";
 if (system("./shellshock.sh") == 0) {
@@ -2687,7 +2687,8 @@ sub Findmissinghttpsmethods ( ) {
 sub Ssrf ( ) {
 	print item(), "1 - SSRF MAP\n";
     print item(), "2 - SSRF SEE SURF\n";
-    print item(), "2 - Select An Option\n";
+    print item(),"Enter Option: ";	
+    schomp($enter=<STDIN>);
     if ($enter =~1) {	
 	if (system("./ssrfmap.sh") == 0) {
     print "\n";
@@ -2801,7 +2802,7 @@ sub Showjson ( ) {
 }
 
 #-------------------------------------------------------------------------------#
-# 29 Perform Blind,Encoded,Responsive XXE Injection            		            #
+# 28 Perform Blind,Encoded,Responsive XXE Injection            		            #
 #-------------------------------------------------------------------------------#
 sub Blindxxeinjection ( ) {
 	print item(), "1 - XXE Injector\n";
@@ -2834,7 +2835,7 @@ sub Blindxxeinjection ( ) {
 }
 
 #-------------------------------------------------------------------------------#
-# 30 Perform File Upload Injections                          		            #
+# 29 Perform File Upload Injections                          		            #
 #-------------------------------------------------------------------------------#
 sub Fileupload ( ) {
 	if (system("./fux.sh") == 0) {
@@ -2848,7 +2849,7 @@ sub Fileupload ( ) {
 }
 
 #-------------------------------------------------------------------------------#
-# 31 Perform Side Side Template Injection                   		            #
+# 30 Perform Side Side Template Injection                   		            #
 #-------------------------------------------------------------------------------#
 sub Pssti ( ) {
 	if (system("./tpl.sh") == 0) {
@@ -2862,7 +2863,7 @@ sub Pssti ( ) {
 }
 
 #-------------------------------------------------------------------------------#
-# 32 Perform JSON Web Token Injection                          		            #
+# 31 Perform JSON Web Token Injection                          		            #
 #-------------------------------------------------------------------------------#
 sub Jsonwebtoken ( ) {
 	if (system("./json.sh") == 0) {
@@ -2876,7 +2877,7 @@ sub Jsonwebtoken ( ) {
 }
 
 #-------------------------------------------------------------------------------#
-# 33 Perform Web Socket Injection                            		            #
+# 32 Perform Web Socket Injection                            		            #
 #-------------------------------------------------------------------------------#
 sub Pwebsocket ( ) {
 	if (system("./websocket.sh") == 0) {
@@ -2890,17 +2891,10 @@ sub Pwebsocket ( ) {
 	}
 
 #-------------------------------------------------------------------------------#
-# 34 Perform Amazon Bucket Injection 101 aws amazon         		            #
+# 33 Perform Amazon Bucket Injection 101 aws amazon         		            #
 #-------------------------------------------------------------------------------#
 sub Amazonbucket ( ) {
-	print item(),"1 - Load Module Pack S3\n";
-	print item(),"2 - Load Module Pack S3\n";
-	print item(),"3 - Load Module Pack EC2\n";
-	print item(),"4 - List all Account IDs with Information\n";
-	print item(),"Enter Option: ";	
-    chomp($enter=<STDIN>);
-    if ($enter =~1) {	
-	if (system("./aws1.sh") == 0) {
+	if (system("./amazon.sh") == 0) {
     print "\n";
 	print item(), "Success!\n";
 	}
@@ -2910,21 +2904,9 @@ sub Amazonbucket ( ) {
 	}
 } 
 
-    if ($enter =~2) {	
-	if (system("./aws2.sh") == 0) {
-    print "\n";
-	print item(), "Success!\n";
-	}
-	else {
-	print "\n\n";
-	print item(), "Error, Command Failed\n";
-	}
-}
-}
-
 
 #-------------------------------------------------------------------------------#
-# 35 Extract Cnames Records for Hijacking                    		            #
+# 34 Extract Cnames Records for Hijacking                    		            #
 #-------------------------------------------------------------------------------#
 sub Extractcname ( ) {
 	if (system("./vasl.sh") == 0) {
@@ -2938,7 +2920,7 @@ sub Extractcname ( ) {
 }
 
 #-------------------------------------------------------------------------------#
-# 36 Perform Insecure Direct Object References - BURP AUTHz        	            #
+# 35 Perform Insecure Direct Object References - BURP AUTHz        	            #
 #-------------------------------------------------------------------------------#
 sub Idorburp ( ) {
 	print item(), "Download BURP Plugin :\n";
@@ -3466,9 +3448,9 @@ sub Lfi () {
 
 
 #-----------------------------------------------#
-# 56 bbinary Buffer Overflow Finder              #
+# 56 Binary Buffer Overflow Finder              #
 #-----------------------------------------------#
-sub bbinary () { 
+sub Banar () { 
 	if (system("./bbinary.sh") == 0) {
     print "\n";
 	print item(), "Success!\n";
@@ -3482,7 +3464,7 @@ sub bbinary () {
 #------------------------------------------------------#
 # 57 Stored and Reflected XSS Angular JS Payloads      #
 #------------------------------------------------------#
-sub sarxssangularjspayloads () { 
+sub Sarxssangularjspayloads ( ) { 
 	if (system("cat angularxsspayloads") == 0) {
     print "\n";
 	print item(), "Success!\n";
@@ -3497,7 +3479,7 @@ sub sarxssangularjspayloads () {
 #-----------------------------------------------#
 # 58 Phantom JS XSS Payload Helper              #
 #-----------------------------------------------#
-sub phantomjsxsspayloadhelper () { 
+sub Phantomjsxsspayloadhelper () { 
 	if (system("./phantomxsspayload.sh") == 0) {
     print "\n";
 	print item(), "Success!\n";
@@ -3512,7 +3494,7 @@ sub phantomjsxsspayloadhelper () {
 #--------------------------------------------------#
 # 59 Angular JS Client SIde Automatic XSS Finder   #
 #--------------------------------------------------#
-sub automaticangularjs () { 
+sub Automaticangularjs () { 
 	print item(),"1 - Angular JS XSS Finder with Parameter \n";
 	print item(),"1 - Angular JS XSS Finder wth Domain Crawler \n";
 	print item(),"Enter Option: ";
@@ -3542,8 +3524,8 @@ sub automaticangularjs () {
 #-----------------------------------------------#
 # 60 Session Hijacking Burp Method              #
 #-----------------------------------------------#
-sub sessionhijack ( ) {
-	if (system("./sessions.sh") == 0) {
+sub Sessionhijack ( ) {
+	if (system("./session.sh") == 0) {
     print "\n";
 	print item(), "Success!\n";
 	}
@@ -3556,7 +3538,7 @@ sub sessionhijack ( ) {
 #-----------------------------------------------#
 # 61 OAUTH Injections                           #
 #-----------------------------------------------#
-sub oauth ( ) {
+sub Oauth ( ) {
 	if (system("./oauth.sh") == 0) {
     print "\n";
 	print item(), "Success!\n";
