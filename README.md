@@ -27,9 +27,6 @@ EULA
 - Terror Security (Computer Security)
 - National Cyber Security Services
 
-# Fan Made Video
-- https://www.facebook.com/estevan.sepulveda.39/videos/2521621357850490/
-
 
 # Brief Introduction
 - Tishna is useful in Banks, Private Organisations and Ethical hacker personnel for legal auditing.
