@@ -36,7 +36,7 @@ echo "           ..##...........##.......######....#######....##...##..##....###
 echo "          ...##...........##...........##....##...##....##.....#.##....##....##...       "; 
 echo "      .......##...........##.......##..##....##...##....##......###....##....##.......   "; 
 echo "         ....##........########....######....##...##....##.......##....##....##....      ";  
-echo "                Powerful and A.I. Based Web Securit Swiss Knife     Version 1.0a         ";   
+echo "                Powerful and A.I. Based Web Security Swiss Knife     Version 1.0a         ";   
 echo "                                [Coded By: Haroon Awan]                                  ";
 echo "                            [Contact: mrharoonawan@gmail.com]                            ";
 echo "                                                                                         ";
