@@ -145,6 +145,12 @@ echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
 echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
 echo "y" | apt-get install nmap
 echo "y" | apt-get install xrdp
+echo "y" | apt-get install python-pip
+echo "y" | apt-get install python3-pip
+echo "y" | apt-get install python-setuptools
+echo "y" | pip install setuptools
+python setup.py install
+
 pip install jsbeautifier
 pip install argparse
 pip install requests
