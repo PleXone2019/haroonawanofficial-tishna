@@ -4,7 +4,7 @@
 # LICENSE
 EULA
 
-# Universal Linux/Termux Interface
+# Interface
 - Software have 61 Options with full automation and can be use for web security swiss knife
 <div align="center">
     <img src="https://i.ibb.co/VmzRBC3/t1.png" width="400px"</img> 
