@@ -22,6 +22,16 @@ EULA
 - Tishna is Web Server Security Penetration Software for Ultimate Security Analaysis
 - Kali, Parrot OS, Black Arch, Termux, Android Led TV
 
+# Appeared
+- Cyber Space (Computer Security)
+- Terror Security (Computer Security)
+- National Cyber Security Services
+- 
+
+# Fane Made Video
+- https://www.facebook.com/estevan.sepulveda.39/videos/2521621357850490/
+
+
 # Brief Introduction
 - Tishna is useful in Banks, Private Organisations and Ethical hacker personnel for legal auditing.
 - It serves as a defense method to find as much as information possible for gaining unauthorised access and intrusion.  
