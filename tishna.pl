@@ -124,10 +124,7 @@ GetOptions(
     "aab|rfi=s" => \$rfi,
     "aac|lfi=s" => \$lfi,
     "aad|banar=s" => \$banar,
-    "aae|ipobfuscating=s" => \$ipobfuscating,
-    "aaf|rfi=s" => \$rfi,
-    "aag|lfi=s" => \$lfi,
-    "aah|banar=s" => \$banar,
+    "aae|dnshistory=s" => \$dnshistory,
 );
 
 if ($help) { banner();help(); }
@@ -192,6 +189,7 @@ if ($phantomjsxsspayloadhelper) { banner();Phantomjsxsspayloadhelper(); }
 if ($automaticangularjs) { banner();Automaticangularjs(); }
 if ($sessionhijack) { banner();Sessionhijack(); }
 if ($oauth) { banner();Oauth(); }
+if ($dnshistory) { banner();Dnshistory(); }
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -572,6 +570,12 @@ sub help {
     print color("bold white"),"tishna -aah site.com";
     print color('bold cyan'),"                 #   \n";
 
+    print color('bold cyan'),"#                   ";
+    print item('62'),"Bypass Firewall using DNS History ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"tishna -aai site.com";
+    print color('bold cyan'),"                 #   \n";
+
     
 #--------------------------------------------------------------#
 #                           Banner                             #
@@ -675,7 +679,9 @@ sub menu {
     print color('bold cyan'),"	|  ";print color('reset'),item('59')," Agular JS Client Side Automatic XSS Finder  ";print color('bold cyan'),"  |   \n";          
     print color('bold cyan'),"	|  ";print color('reset'),item('60')," Session Hijacking Burp Method  ";print color('bold cyan'),"               |   \n";          
     print color('bold cyan'),"	|  ";print color('reset'),item('61')," OAUTH Injections  ";print color('bold cyan'),"                            |   \n";          
+    print color('bold cyan'),"	|  ";print color('reset'),item('62')," Bypass Firewall using DNS History  ";print color('bold cyan'),"           |   \n";          
     print color('bold cyan'),"	|  ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                            |   \n",line_d();
+
     print color('bold green'),"\n\ntishna: _>  ";
     print color('reset');
     
@@ -1229,6 +1235,15 @@ sub menu {
         #chomp($oauth=<STDIN>);
         print "\n";
         Oauth();
+        enter();
+     }if($number eq '62'){
+        banner();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
+        print color('bold green'),"\n\ntishna: _>  ";
+        print color('bold white');
+        #chomp($oauth=<STDIN>);
+        print "\n";
+        Dnshistory();
         enter();
    }
       if($number eq '0'){
@@ -3559,6 +3574,22 @@ sub Sessionhijack ( ) {
 #-----------------------------------------------#
 sub Oauth ( ) {
 	if (system("./oauth.sh") == 0) {
+    print "\n";
+	print item(), "Success!\n";
+	}
+	else {
+	print "\n\n";
+	print item(), "Error, Command Failed\n";
+	}
+}
+
+
+
+#-----------------------------------------------#
+# 62 Bypass Firewall using DNS History          #
+#-----------------------------------------------#
+sub Dnshistory ( ) {
+	if (system("./bypassdnshistorystart.sh") == 0) {
     print "\n";
 	print item(), "Success!\n";
 	}
