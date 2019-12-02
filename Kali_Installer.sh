@@ -124,6 +124,7 @@ echo "y" | apt-get install python3
 echo "y" | apt-get install x11-utils xutils-dev imagemagick libxext-dev xspy
 echo "y" | apt-get install golang
 echo "y" | apt-get install curl
+echo "y" | apt-get install jq
 echo "y" | apt-get install nfs-common
 echo "y" | apt-get install smbclient
 echo "y" | apt-get install perl-LWP-Protocol-https
