@@ -683,7 +683,7 @@ sub menu {
 
     if($number eq '1'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($audit=<STDIN>);
@@ -692,7 +692,7 @@ sub menu {
         enter();
     }if($number eq '2'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($extractresponsesheader=<STDIN>);
@@ -701,7 +701,7 @@ sub menu {
         enter();
     }if($number eq '3'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($extractimages=<STDIN>);
@@ -710,16 +710,16 @@ sub menu {
         enter();
     }if($number eq '4'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($extracturls=<STDIN>);
+        #chomp($extracturls=<STDIN>);
         print "\n";
         Extracturls();
         enter();
     }if($number eq '5'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($identifyform=<STDIN>);
@@ -728,7 +728,7 @@ sub menu {
         enter();
     }if($number eq '6'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($findxssinforms=<STDIN>);
@@ -737,7 +737,7 @@ sub menu {
         enter();
     }if($number eq '7'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($findxssinweb=<STDIN>);
@@ -746,7 +746,7 @@ sub menu {
         enter();
     }if($number eq '8'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($wsmrsa=<STDIN>);
@@ -755,7 +755,7 @@ sub menu {
         enter();
     }if($number eq '9'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($headerinjectpoison=<STDIN>);
@@ -764,7 +764,7 @@ sub menu {
         enter();
      }if($number eq '10'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($cachepoisondefacer=<STDIN>);
@@ -773,7 +773,7 @@ sub menu {
         enter();
     }if($number eq '11'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($crlfrsaf=<STDIN>);
@@ -782,7 +782,7 @@ sub menu {
         enter();
     }if($number eq '12'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($httprsf=<STDIN>);
@@ -791,7 +791,7 @@ sub menu {
         enter();
     }if($number eq '13'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($wcdac=<STDIN>);
@@ -800,7 +800,7 @@ sub menu {
         enter();
     }if($number eq '14'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($httpmethodsinformation=<STDIN>);
@@ -809,7 +809,7 @@ sub menu {
         enter();        
     }if($number eq '15'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($csrfinjection=<STDIN>);
@@ -818,7 +818,7 @@ sub menu {
         enter(); 
     }if($number eq '16'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($loadcsrfhtmltemplates=<STDIN>);
@@ -827,7 +827,7 @@ sub menu {
         enter();        
     }if($number eq '17'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($shellshock=<STDIN>);
@@ -836,7 +836,7 @@ sub menu {
         enter();        
     }if($number eq '18'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($csrfat=<STDIN>);
@@ -845,7 +845,7 @@ sub menu {
         enter();
     }if($number eq '19'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($fahttpm=<STDIN>);
@@ -854,7 +854,7 @@ sub menu {
         enter();
     }if($number eq '20'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($findxssinparameters=<STDIN>);
@@ -863,7 +863,7 @@ sub menu {
         enter();
     }if($number eq '21'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($findmissinghttpsmethods=<STDIN>);
@@ -872,7 +872,7 @@ sub menu {
         enter();
     }if($number eq '22'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($ssrf=<STDIN>);
@@ -881,7 +881,7 @@ sub menu {
         enter();
     }if($number eq '23'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($fahttpsmethods=<STDIN>);
@@ -890,7 +890,7 @@ sub menu {
         enter();
     }if($number eq '24'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($auditxmlrpc=<STDIN>);
@@ -899,7 +899,7 @@ sub menu {
         enter();
     }if($number eq '25'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($cookiestealer=<STDIN>);
@@ -908,7 +908,7 @@ sub menu {
         enter();
     }if($number eq '26'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($commandinection=<STDIN>);
@@ -917,7 +917,7 @@ sub menu {
         enter();
     }if($number eq '27'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($showjson=<STDIN>);
@@ -926,7 +926,7 @@ sub menu {
         enter();
     }if($number eq '28'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($blindxxeinjection=<STDIN>);
@@ -935,7 +935,7 @@ sub menu {
         enter();
     }if($number eq '29'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($fileupload=<STDIN>);
@@ -944,7 +944,7 @@ sub menu {
         enter();
     }if($number eq '30'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($pssti=<STDIN>);
@@ -953,7 +953,7 @@ sub menu {
         enter();
     }if($number eq '31'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($jsonwebtoken=<STDIN>);
@@ -962,7 +962,7 @@ sub menu {
         enter();
     }if($number eq '32'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($pwebsocket=<STDIN>);
@@ -971,7 +971,7 @@ sub menu {
         enter();
     }if($number eq '33'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($amazonbucket=<STDIN>);
@@ -980,7 +980,7 @@ sub menu {
         enter();
     }if($number eq '34'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($extractcname=<STDIN>);
@@ -989,7 +989,7 @@ sub menu {
         enter();
     }if($number eq '35'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($idorburp=<STDIN>);
@@ -998,7 +998,7 @@ sub menu {
         enter();
     }if($number eq '36'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($performcsv=<STDIN>);
@@ -1007,7 +1007,7 @@ sub menu {
         enter();
     }if($number eq '37'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($pxpath=<STDIN>);
@@ -1016,7 +1016,7 @@ sub menu {
         enter();
     }if($number eq '38'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($findbugs=<STDIN>);
@@ -1025,7 +1025,7 @@ sub menu {
         enter();
     }if($number eq '39'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($xpathsql=<STDIN>);
@@ -1034,7 +1034,7 @@ sub menu {
         enter();
     }if($number eq '40'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($ffa=<STDIN>);
@@ -1043,7 +1043,7 @@ sub menu {
         enter();
     }if($number eq '41'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($wafbypass=<STDIN>);
@@ -1052,7 +1052,7 @@ sub menu {
         enter();
     }if($number eq '42'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($storedxsspayloads=<STDIN>);
@@ -1061,7 +1061,7 @@ sub menu {
         enter();
     }if($number eq '43'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($reflectedxsspayloads=<STDIN>);
@@ -1070,7 +1070,7 @@ sub menu {
         enter();
     }if($number eq '44'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($wafbypass=<STDIN>);
@@ -1079,7 +1079,7 @@ sub menu {
         enter();
     }if($number eq '45'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($findxxsrs=<STDIN>);
@@ -1088,7 +1088,7 @@ sub menu {
         enter();
     }if($number eq '46'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($extractlinksa=<STDIN>);
@@ -1097,7 +1097,7 @@ sub menu {
         enter();
     }if($number eq '47'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($downloadlinksexif=<STDIN>);
@@ -1106,7 +1106,7 @@ sub menu {
         enter();
     }if($number eq '48'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($simplersa=<STDIN>);
@@ -1115,7 +1115,7 @@ sub menu {
         enter();
     }if($number eq '49'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($doublersa=<STDIN>);
@@ -1124,7 +1124,7 @@ sub menu {
         enter();
     }if($number eq '50'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($httpcachepoison=<STDIN>);
@@ -1133,7 +1133,7 @@ sub menu {
         enter();
     }if($number eq '51'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($httpcacheinject=<STDIN>);
@@ -1142,7 +1142,7 @@ sub menu {
         enter();
     }if($number eq '52'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($httpfuzzer=<STDIN>);
@@ -1151,7 +1151,7 @@ sub menu {
         enter();
     }if($number eq '53'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($ipobfuscating=<STDIN>);
@@ -1160,7 +1160,7 @@ sub menu {
         enter();
     }if($number eq '54'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($rfi=<STDIN>);
@@ -1169,7 +1169,7 @@ sub menu {
         enter();
      }if($number eq '55'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($lfi=<STDIN>);
@@ -1178,7 +1178,7 @@ sub menu {
         enter();
      }if($number eq '56'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($banar=<STDIN>);
@@ -1187,7 +1187,7 @@ sub menu {
         enter();
      }if($number eq '57'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($sarxssangularjspayloads=<STDIN>);
@@ -1196,7 +1196,7 @@ sub menu {
         enter();
      }if($number eq '58'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($phantomjsxsspayloadhelper=<STDIN>);
@@ -1205,7 +1205,7 @@ sub menu {
         enter();
      }if($number eq '59'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($automaticangularjs=<STDIN>);
@@ -1214,7 +1214,7 @@ sub menu {
         enter();
      }if($number eq '60'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($sessionhijack=<STDIN>);
@@ -1223,7 +1223,7 @@ sub menu {
         enter();
      }if($number eq '61'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         #chomp($oauth=<STDIN>);
@@ -1345,11 +1345,30 @@ print "\n\n";
 #                                               #
 #-----------------------------------------------#
 sub Extracturls( ) {
+	print item(),"1 - Enter Perl Crawler Mode\n";
+	print item(),"2 - Enter Python Crawler Mode\n";
+	print item(),"Select An Option: ";
+	chomp($enter=<STDIN>);
+	if ($enter =~1) {
+print item(),"Enter Victim URL: ";
+chomp($extracturls=<STDIN>);
 my $mech = WWW::Mechanize->new(); # always define
 $mech->get( $extracturls ); # to get something, url means absolute url value
 $mech->dump_links();
 print "\n\n";
 } 
+	if ($enter =~2) {
+if (system("./crawler.sh") == 0) {
+    print "\n";
+	print item(), "Success!\n";
+	}
+	else {
+	print "\n\n";
+	print item(), "Error, Command Failed\n";
+	}
+}
+
+}
 
 
 #-----------------------------------------------#
