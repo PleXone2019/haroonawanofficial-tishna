@@ -601,7 +601,7 @@ print color('reset');
 print color('bold red on_blue'),"	Homepage      ";print color('reset'),"";print color('bold red'),"      http://www.instagram.com/\Hackeruniversee\n";
 print color('reset');
 
-print color('bold yellow on_red'),"	Web           ";print color('reset'),"";print color('bold yellow'),"      http://www.mubassirkamdar.com\n";
+print color('bold yellow on_red'),"	Channel       ";print color('reset'),"";print color('bold yellow'),"      http://www.youtube.com/c/HackerUniverse\n";
 print color('reset');
 
 print color('bold green on_black'),"	Facebook      ";print color('reset'),"";print color('bold green'),"      fb.com/officialharoonawan\n";
