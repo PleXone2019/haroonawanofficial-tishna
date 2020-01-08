@@ -47,6 +47,13 @@ EULA
 - Dependencies will be handled automatically
 - Third party software(s)/dependencies/modules will be handled automatically
 
+# Updating Form XSS Payloads
+- It is possible to update more payloads for form based xss, edit config.xml to update your own payloads
+- Use XSS Finder payloads and embed them into config.xml (easy to upgrade)
+
+# Module not working?!
+- Report if any module is not working.
+
 # Developer
 - Haroon Awan
 - mrharoonawan@gmail.com
