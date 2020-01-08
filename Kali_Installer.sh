@@ -157,9 +157,11 @@ pip install argparse
 pip install requests
 pip install request
 pip install colorlog
+chmod -R 755 *
 chmod u+x *.sh
 cp * -r /usr/share/tishna
 cp *.sh /usr/share/tishna
+chmod -R 755 /usr/share/tishna
 
 if [ -d "/usr/share/tishna" ] ;
 then
