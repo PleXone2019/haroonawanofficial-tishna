@@ -1262,7 +1262,7 @@ sub menu {
 #-----------------------------------------------#
 sub Audit( ) {
 my $mech = WWW::Mechanize->new(); # always define
-$mech->get( $erh );
+$mech->get( $audit );
 print color("BOLD RED"), "\n\n								[ + ] Printing HTTP Headers [ + ] \n\n";
 #print color("BOLD RED"), "								====================== \n";
 print color("reset");
