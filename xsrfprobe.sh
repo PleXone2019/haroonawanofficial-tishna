@@ -1,5 +1,5 @@
 #!/bin/bash
+cd XSRFProbe
 echo -ne "[+] Enter Target : "
 read Target
-cd XSRFProbe
-./xsrfprobe.py -u $Target
+python xsrfprobe.py -u $Target
