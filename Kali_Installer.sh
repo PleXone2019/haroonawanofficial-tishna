@@ -144,6 +144,7 @@ echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
 echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
+echo "y" | git clone https://github.com/haroonawanofficial/KrA.git
 echo "y" | apt-get install nmap
 echo "y" | apt-get install xrdp
 echo "y" | apt-get install python-pip
