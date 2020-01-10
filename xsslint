@@ -38,6 +38,7 @@ sub audit_it {
     my @v = grep { $_->vulnerable } @results;
     unless (@v) {
 	print "[>] Form(s) paramters are not vulernable to defined payloads\n\n";	
+	print "[>] This script is slow, and uses one payload only\n\n";	
 	return;
     }
 
