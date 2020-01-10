@@ -88,21 +88,18 @@ echo "y" | cpanm --uninstall  Bundle::LWP
 
 echo -e "$red [$green+$red]$off Checking directories..."
       sudo rm -r "/usr/share/tishna"
-      sudo rm "/usr/share/icons/tishna.png"
-      sudo rm "/usr/share/applications/tishna.desktop"
-      sudo rm "/usr/local/bin/tishna"
+      sudo rm -r "/usr/share/icons/tishna.png"
+      sudo rm -r "/usr/share/applications/tishna.desktop"
+      sudo rm -r "/usr/local/bin/tishna"
 
 echo -e "$red [$green+$red]$off Uninstalling ...";
 echo -e "$red [$green+$red]$off Creating Symbolic Link ...";
 sudo rm /usr/share/tishna/tishna.pl";
     sudo rm "tishna";
-    sudo rmdir "/usr/share/tishna"
-    sudo rm "installer.sh" "/usr/share/tishna"
-    sudo rm "tishna.pl" "/usr/share/tishna"
+    sudo rm -r "/usr/share/tishna"
     sudo rm "config/tishna.jpeg" "/usr/share/icons"
     sudo rm "config/tishna.desktop" "/usr/share/applications"
-    sudo rm "tishna" "/usr/local/bin/"
-    rm "tishna";
+    
 
 rm * -r /usr/share/tishna
 rm *.sh /usr/share/tishna
