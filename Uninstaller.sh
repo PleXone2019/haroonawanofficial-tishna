@@ -94,9 +94,8 @@ echo -e "$red [$green+$red]$off Checking directories..."
 
 echo -e "$red [$green+$red]$off Uninstalling ...";
 echo -e "$red [$green+$red]$off Creating Symbolic Link ...";
-echo -e "#!/bin/bash
 sudo rm /usr/share/tishna/tishna.pl";
-    chmod +x "tishna";
+    sudo rm "tishna";
     sudo rmdir "/usr/share/tishna"
     sudo rm "installer.sh" "/usr/share/tishna"
     sudo rm "tishna.pl" "/usr/share/tishna"
