@@ -107,7 +107,8 @@ sudo rm /usr/share/tishna/tishna.pl";
 
 rm * -r /usr/share/tishna
 rm *.sh /usr/share/tishna
+}
 
 banner
-echo -e "$red [$green+$red]$off tishna Uninstalled In Your System";
+echo -e "$red [$green+$red]$off Uninstalled In Your System";
 linux
