@@ -48,7 +48,7 @@ function linux() {
 echo -e "$red [$green+$red]$off Uninstalling Perl ...";
 sudo apt purge -y perl
 echo -e "$red [$green+$red]$off Installing Uninstaller ...";
-install App::cpanminus
+cpan -fi install App::cpanminus
 echo -e "$red [$green+$red]$off Uninstalling Extra Perl Modules ...";
 echo "y" | cpanm --uninstall  JSON
 echo "y" | cpanm --uninstall  WWW::Mechanize
