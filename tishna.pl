@@ -1112,7 +1112,7 @@ sub menu {
         enter();
     }if($number eq '48'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website without Absolute Format";print color('bold cyan'),"           #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website without Absolute Format";print color('bold cyan'),"      #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($simplersa=<STDIN>);
@@ -3268,7 +3268,7 @@ print color("BOLD RED"), "[ ~ ] Reflection not found [ ~ ]\n\n";
 print color("reset");
 }
 print "\n\n";
-exit;
+
 			      }
 
 #-----------------------------------------------#
@@ -3296,7 +3296,7 @@ print color("BOLD RED"), "[ ~ ] Reflection not found [ ~ ]\n\n";
 print color("reset");
 }
 print "\n\n";
-exit;
+
 			      }
 
 #-----------------------------------------------#
@@ -3324,7 +3324,7 @@ print color("BOLD RED"), "[ ~ ] Reflection not found [ ~ ]\n\n";
 print color("reset");
 }
 print "\n\n";
-exit;
+
 			    }
 
 #-----------------------------------------------#
@@ -3371,7 +3371,7 @@ print color("reset");
 }
 print "\n\n";
 
-exit;
+
 			    }
 
 #-----------------------------------------------#
@@ -3406,7 +3406,7 @@ print $res->as_string (), "\n"; #show http request and response
 print "\n\n";
 
 
-exit;
+
 }
 
 #-----------------------------------------------#
