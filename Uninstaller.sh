@@ -96,9 +96,6 @@ echo -e "$red [$green+$red]$off Uninstalling ...";
 echo -e "$red [$green+$red]$off Creating Symbolic Link ...";
 sudo rm /usr/share/tishna/tishna.pl";
     sudo rm "tishna";
-    sudo rm -r "/usr/share/tishna"
-    sudo rm "config/tishna.jpeg" "/usr/share/icons"
-    sudo rm "config/tishna.desktop" "/usr/share/applications"
     
 
 rm * -r /usr/share/tishna
