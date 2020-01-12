@@ -1121,7 +1121,7 @@ sub menu {
         enter();
     }if($number eq '49'){
         banner();
-        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"           #   \n",line_d();
+        print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website without Absolute Format";print color('bold cyan'),"      #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
         chomp($doublersa=<STDIN>);
@@ -1408,7 +1408,7 @@ sub Findxssinforms( ) {
 my $ua = LWP::UserAgent->new;
 $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/31.0.");
 my $mech = WWW::Mechanize->new();
-#my $checker = HTML::Form::XSS->new($mech, config => '/home/config.xml');
+#my $checker = HTML::Form::XSS->new($mech, config => '/root/config.xml');
 $mech->get( $findxssinforms );
 my @forms = $mech->forms();
 foreach my $form (@forms){
@@ -3279,7 +3279,7 @@ my $ua = LWP::UserAgent->new;
 $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/31.0.");
 print color("BOLD WHITE"), "\n[ + ] Checking HTTP Response Splitting [ + ]  \n";
 print color("reset");
-my $req = HTTP::Request->new( GET => "http://$url%0d%0a%0d%0a\";alert('XSS');//" );
+my $req = HTTP::Request->new( GET => "http://$doublersa/%0d%0a%0d%0a\";alert('XSS');//" );
 my $res = $ua->request($req);
 print $res->as_string (); 
 print $req->as_string (); 
