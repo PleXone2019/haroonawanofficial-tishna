@@ -1422,7 +1422,7 @@ foreach my $form (@forms){
 	if($answer ne "y"){
 		next;
 	}
-	my $checker = HTML::Form::XSS->new($mech, config => '/home/config.xml');
+	my $checker = HTML::Form::XSS->new($mech, config => '/root/config.xml');
 	my @results = $checker->do_audit($form);
 	my $vuln = 0;
 	foreach my $result (@results){
