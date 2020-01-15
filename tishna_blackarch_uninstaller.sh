@@ -88,10 +88,10 @@ echo "y" | cpanm --uninstall  Bundle::LWP
 function local_files_remove()
 {
 echo -e "$red [$green+$red]$off Checking directories..."
-      sudo rm -rf "/usr/share/Tishna"
-      sudo rm -r "/usr/share/icons/Tishna.png"
-      sudo rm -r "/usr/share/applications/Tishna.desktop"
-      sudo rm -r "/usr/local/bin/Tishna"
+      sudo rm -rf "/usr/share/tishna"
+      sudo rm -r "/usr/share/icons/tishna.png"
+      sudo rm -r "/usr/share/applications/tishna.desktop"
+      sudo rm -r "/usr/local/bin/tishna"
 
 echo -e "$red [$green+$red]$off Uninstalling ...";
 echo -e "$red [$green+$red]$off Creating Symbolic Link ...";
@@ -100,5 +100,5 @@ echo -e "$red [$green+$red]$off Creating Symbolic Link ...";
 banner
 local_files_remove
 perl_modules_uninstall
-sudo rm -rf "/root/Tishna";
-echo -e "$red [$green+$red]$off Tishna has been Uninstalled From Your System";
+sudo rm -rf "/root/tishna";
+echo -e "$red [$green+$red]$off tishna has been Uninstalled From Your System";
