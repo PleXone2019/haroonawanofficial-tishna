@@ -86,11 +86,11 @@ echo "y" | cpan install Bundle::LWP
 
 
 echo -e "$red [$green+$red]$off Checking directories..."
-if [ -d "/usr/share/Tishna" ]; then
+if [ -d "/usr/share/tishna" ]; then
     echo -e "$red [$green+$red]$off A Directory tishna Was Found! Do You Want To Replace It? [Y/n]:" ;
     read replace
     if [ "$replace" = "Y" ]; then
-      sudo rm -r "/usr/share/Tishna"
+      sudo rm -r "/usr/share/tishna"
       sudo rm "/usr/share/icons/tishna.png"
       sudo rm "/usr/share/applications/tishna.desktop"
       sudo rm "/usr/local/bin/tishna"
@@ -159,26 +159,26 @@ pip install request
 pip install colorlog
 chmod -R 755 *
 chmod u+x *.sh
-cp * -r /usr/share/Tishna
-cp *.sh /usr/share/Tishna
-chmod -R 755 /usr/share/Tishna
+cp * -r /usr/share/tishna
+cp *.sh /usr/share/tishna
+chmod -R 755 /usr/share/tishna
 
-if [ -d "/usr/share/Tishna" ] ;
+if [ -d "/usr/share/tishna" ] ;
 then
-echo -e "$red [$green+$red]$off Tishna Successfully Installed, Starting";
+echo -e "$red [$green+$red]$off tishna Successfully Installed, Starting";
 sleep 2;
 tishna
 else
-echo -e "$red [$green+$red]$off Tishna Cannot Be Installed. Trying using Portable Edition !";
+echo -e "$red [$green+$red]$off tishna Cannot Be Installed. Trying using Portable Edition !";
     exit
 fi 
 }
 
 if [ -d "/usr/bin/" ];then
 banner
-echo -e "$red [$green+$red]$off Tishna Will Be Installed In Your System";
+echo -e "$red [$green+$red]$off tishna Will Be Installed In Your System";
 linux
 else
-echo -e "$red [$green+$red]$off Tishna Cannot Be Installed. Trying using Portable Edition !";
+echo -e "$red [$green+$red]$off tishna Cannot Be Installed. Trying using Portable Edition !";
     exit
 fi
