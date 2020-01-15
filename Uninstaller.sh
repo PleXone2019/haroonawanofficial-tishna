@@ -39,15 +39,14 @@ echo "         ....##........########....######....##...##....##.......##....##.
 echo "                Powerful and A.I. Based Web Security Swiss Knife     Version 1.0a         ";   
 echo "                                [Coded By: Haroon Awan]                                  ";
 echo "                            [Contact: mrharoonawan@gmail.com]                            ";
-echo "                                                                                         ";
+echo "                              [Uninstaller By: Ameer Osama]                              ";
 echo "                                                                                         ";
 echo "                                                                                         ";
 }
 
-function linux() {
-echo -e "$red [$green+$red]$off Uninstalling Perl ...";
-sudo apt purge -y perl
-echo -e "$red [$green+$red]$off Installing Uninstaller ...";
+function perl_modules_uninstall() 
+{
+echo -e "$red [$green+$red]$off Installing Uninstaller For Extra Perl Modules ...";
 cpan -fi install App::cpanminus
 echo -e "$red [$green+$red]$off Uninstalling Extra Perl Modules ...";
 echo "y" | cpanm --uninstall  JSON
@@ -84,24 +83,22 @@ echo "y" | cpanm --uninstall  Data::Validate::Domain
 echo "y" | cpanm --uninstall  LWP::Protocol::https
 echo "y" | cpanm --uninstall  Mozilla::CA
 echo "y" | cpanm --uninstall  Bundle::LWP
+}
 
-
+function local_files_remove()
+{
 echo -e "$red [$green+$red]$off Checking directories..."
-      sudo rm -r "/usr/share/tishna"
+      sudo rm -rf "/usr/share/tishna"
       sudo rm -r "/usr/share/icons/tishna.png"
       sudo rm -r "/usr/share/applications/tishna.desktop"
       sudo rm -r "/usr/local/bin/tishna"
 
 echo -e "$red [$green+$red]$off Uninstalling ...";
 echo -e "$red [$green+$red]$off Creating Symbolic Link ...";
-sudo rm /usr/share/tishna/tishna.pl";
-    sudo rm "tishna";
-    
-
-rm * -r /usr/share/tishna
-rm *.sh /usr/share/tishna
 }
-
+ 
 banner
-echo -e "$red [$green+$red]$off Uninstalled In Your System";
-linux
+local_files_remove
+perl_modules_uninstall
+sudo rm -rf "/root/Tishna";
+echo -e "$red [$green+$red]$off Tishna has been Uninstalled From Your System";
