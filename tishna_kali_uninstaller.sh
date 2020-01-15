@@ -39,7 +39,6 @@ echo "         ....##........########....######....##...##....##.......##....##.
 echo "                Powerful and A.I. Based Web Security Swiss Knife     Version 1.0a         ";   
 echo "                                [Coded By: Haroon Awan]                                  ";
 echo "                            [Contact: mrharoonawan@gmail.com]                            ";
-echo "                              [Uninstaller By: Ameer Osama]                              ";
 echo "                                                                                         ";
 echo "                                                                                         ";
 }
