@@ -99,5 +99,5 @@ echo -e "$red [$green+$red]$off Creating Symbolic Link ...";
 banner
 local_files_remove
 perl_modules_uninstall
-sudo rm -rf "/root/Tishna";
+sudo rm -rf "/root/tishna";
 echo -e "$red [$green+$red]$off Tishna has been Uninstalled From Your System";
