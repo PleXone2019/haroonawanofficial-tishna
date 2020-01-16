@@ -46,7 +46,7 @@ echo "                                                                          
 
 function linux() {
 echo -e "$red [$green+$red]$off Installing Perl ...";
-sudo pacman -s -y perl
+sudo pacman -S -y perl
 echo -e "$red [$green+$red]$off Installing JSON Module ...";
 cpan install JSON
 echo -e "$red [$green+$red]$off Installing Extra Perl Modules ...";
@@ -95,7 +95,7 @@ if [ -d "/usr/share/tishna" ]; then
       sudo rm "/usr/share/applications/tishna.desktop"
       sudo rm "/usr/local/bin/tishna"
 
-`else
+else
 echo -e "$red [$green+$red]$off If You Want To Install You Must Remove Previous Installations";
         exit
     fi
@@ -182,3 +182,4 @@ else
 echo -e "$red [$green+$red]$off tishna Cannot Be Installed. Trying using Portable Edition !";
     exit
 fi
+
