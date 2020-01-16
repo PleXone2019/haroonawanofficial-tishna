@@ -46,43 +46,43 @@ echo "                                                                          
 
 function linux() {
 echo -e "$red [$green+$red]$off Installing Perl ...";
-sudo pacman -S -y perl
+yes | sudo pacman -S perl
 echo -e "$red [$green+$red]$off Installing JSON Module ...";
 cpan install JSON
 echo -e "$red [$green+$red]$off Installing Extra Perl Modules ...";
-echo "y" | cpan install WWW::Mechanize
-echo "y" | cpan install use HTML::TokeParser
-echo "y" | cpan install Term::ANSIColor
-echo "y" | cpan install HTML::LinkExtor
-echo "y" | cpan install use Data::Dumper;
-echo "y" | cpan install HTML::TreeBuilder;
-echo "y" | cpan install WWW::Mechanize::Firefox;
-echo "y" | cpan install WWW::Mechanize::TreeBuilder;
-echo "y" | cpan install HTTP::Cookies;
-echo "y" | cpan install HTML::XSSLint;
-echo "y" | cpan install LWP;
-echo "y" | cpan install LWP::Simple;
-echo "y" | cpan install URI::URL;
-echo "y" | cpan install HTML::XSSLint;
-echo "y" | cpan install HTML::Form::XSS;
-echo "y" | cpan install CGI; 
-echo "y" | cpan install HTTP::Request::Common;
-echo "y" | cpan install WWW::Mechanize::Link;
-echo "y" | cpan install HTTP::Request;
-echo "y" | cpan install HTTP::Request::Common;
-echo "y" | cpan install HTTP::Status;
-echo "y" | cpan install HTML::Form;
-echo "y" | cpan install IO::Socket;
-echo "y" | cpan install IO::Socket::SecureSocks
-echo "y" | cpan install URI::URL;
-echo "y" | cpan install Mojo::DOM
-echo "y" | cpan install Data::Dumper
-echo "y" | cpan install Win32::Console::ANSI
-echo "y" | cpan install HTML::TableExtract
-echo "y" | cpan install Data::Validate::Domain
-echo "y" | cpan install LWP::Protocol::https
-echo "y" | cpan install Mozilla::CA
-echo "y" | cpan install Bundle::LWP
+yes | cpan install WWW::Mechanize
+yes | cpan install use HTML::TokeParser
+yes | cpan install Term::ANSIColor
+yes | cpan install HTML::LinkExtor
+yes | cpan install use Data::Dumper;
+yes | cpan install HTML::TreeBuilder;
+yes | cpan install WWW::Mechanize::Firefox;
+yes | cpan install WWW::Mechanize::TreeBuilder;
+yes | cpan install HTTP::Cookies;
+yes | cpan install HTML::XSSLint;
+yes | cpan install LWP;
+yes | cpan install LWP::Simple;
+yes | cpan install URI::URL;
+yes | cpan install HTML::XSSLint;
+yes | cpan install HTML::Form::XSS;
+yes | cpan install CGI; 
+yes | cpan install HTTP::Request::Common;
+yes | cpan install WWW::Mechanize::Link;
+yes | cpan install HTTP::Request;
+yes | cpan install HTTP::Request::Common;
+yes | cpan install HTTP::Status;
+yes | cpan install HTML::Form;
+yes | cpan install IO::Socket;
+yes | cpan install IO::Socket::SecureSocks
+yes | cpan install URI::URL;
+yes | cpan install Mojo::DOM
+yes | cpan install Data::Dumper
+yes | cpan install Win32::Console::ANSI
+yes | cpan install HTML::TableExtract
+yes | cpan install Data::Validate::Domain
+yes | cpan install LWP::Protocol::https
+yes | cpan install Mozilla::CA
+yes | cpan install Bundle::LWP
 
 
 echo -e "$red [$green+$red]$off Checking directories..."
@@ -107,7 +107,7 @@ echo -e "#!/bin/bash
 perl /usr/share/tishna/tishna.pl" '${1+"$@"}' > "tishna";
     chmod +x "tishna";
     sudo mkdir "/usr/share/tishna"
-    sudo cp "installer.sh" "/usr/share/tishna"
+    sudo cp "tishna_blackarch_installer.sh" "/usr/share/tishna"
     sudo cp "tishna.pl" "/usr/share/tishna"
     sudo cp "config/tishna.jpeg" "/usr/share/icons"
     sudo cp "config/tishna.desktop" "/usr/share/applications"
@@ -115,41 +115,41 @@ perl /usr/share/tishna/tishna.pl" '${1+"$@"}' > "tishna";
     rm "tishna";
 
 echo -e "$red [$green+$red]$off Installing dependencies..."
-echo "y" | pacman -s xdg-utils
-echo "y" | pacman -s cargo
-echo "y" | pacman -s python-yaml
-echo "y" | pacman -s hping3
-echo "y" | pacman -s python2.7
-echo "y" | pacman -s python3
-echo "y" | pacman -s x11-utils xutils-dev imagemagick libxext-dev xspy
-echo "y" | pacman -s golang
-echo "y" | pacman -s curl
-echo "y" | pacman -s jq
-echo "y" | pacman -s nfs-common
-echo "y" | pacman -s smbclient
-echo "y" | pacman -s perl-LWP-Protocol-https
-echo "y" | git clone https://github.com/tijme/angularjs-csti-scanner.git
-echo "y" | git clone https://github.com/maxwellkoh/2FAssassin.git
-echo "y" | git clone https://github.com/ticarpi/jwt_tool.git
-echo "y" | git clone https://github.com/almandin/fuxploider.git
-echo "y" | git clone https://github.com/epinna/tplmap.git
-echo "y" | git clone https://github.com/In3tinct/See-SURF.git
-echo "y" | git clone https://github.com/r0oth3x49/Xpath.git
-echo "y" | git clone https://github.com/0xInfection/XSRFProbe.git
-echo "y" | git clone https://github.com/swisskyrepo/SSRFmap.git
-echo "y" | git clone https://github.com/BuffaloWill/oxml_xxe.git
-echo "y" | git clone https://github.com/enjoiz/XXEinjector.git
-echo "y" | git clone https://github.com/1N3/Wordpress-XMLRPC-Brute-Force-Exploit.git
-echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
-echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
-echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
-echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
-echo "y" | pacman -s nmap
-echo "y" | pacman -s xrdp
-echo "y" | pacman -s python-pip
-echo "y" | pacman -s python3-pip
-echo "y" | pacman -s python-setuptools
-echo "y" | pip install setuptools
+yes | pacman -S xdg-utils
+yes | pacman -S cargo --noconfirm #This package has 2 install candidates this insures the install of the default option
+yes | pacman -S python-yaml
+yes | pacman -S hping
+yes | pacman -S python2
+yes | pacman -S python3
+yes | pacman -S xorg-proto imagemagick libxext xspy # Need arch equivalent package for "xutils-dev"
+yes | pacman -S go
+yes | pacman -S curl
+yes | pacman -S jq
+yes | pacman -S nfs-utils
+yes | pacman -S smbclient
+yes | pacman -S perl-lwp-protocol-https
+yes | git clone https://github.com/tijme/angularjs-csti-scanner.git
+yes | git clone https://github.com/maxwellkoh/2FAssassin.git
+yes | git clone https://github.com/ticarpi/jwt_tool.git
+yes | git clone https://github.com/almandin/fuxploider.git
+yes | git clone https://github.com/epinna/tplmap.git
+yes | git clone https://github.com/In3tinct/See-SURF.git
+yes | git clone https://github.com/r0oth3x49/Xpath.git
+yes | git clone https://github.com/0xInfection/XSRFProbe.git
+yes | git clone https://github.com/swisskyrepo/SSRFmap.git
+yes | git clone https://github.com/BuffaloWill/oxml_xxe.git
+yes | git clone https://github.com/enjoiz/XXEinjector.git
+yes | git clone https://github.com/1N3/Wordpress-XMLRPC-Brute-Force-Exploit.git
+yes | git clone https://github.com/haroonawanofficial/cobra.git
+yes | git clone https://github.com/haroonawanofficial/maahro.git
+yes | git clone https://github.com/haroonawanofficial/ShaheenX.git
+yes | git clone https://github.com/haroonawanofficial/vasl.git
+yes | pacman -S nmap
+#yes | pacman -s xrdp - This package is only available in the AUR, need a workaround
+yes | pacman -S python2-pip # PIP2 package
+yes | pacman -S python-pip # PIP3 package
+yes | pacman -S python-setuptools
+yes | pip install setuptools
 python setup.py install
 
 pip install jsbeautifier
