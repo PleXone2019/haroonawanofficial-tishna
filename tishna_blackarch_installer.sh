@@ -115,19 +115,19 @@ perl /usr/share/tishna/tishna.pl" '${1+"$@"}' > "tishna";
     rm "tishna";
 
 echo -e "$red [$green+$red]$off Installing dependencies..."
-yes | pacman -S xdg-utils
-yes | pacman -S cargo --noconfirm #This package has 2 install candidates this insures the install of the default option
-yes | pacman -S python-yaml
-yes | pacman -S hping
-yes | pacman -S python2
-yes | pacman -S python3
-yes | pacman -S xorg-proto imagemagick libxext xspy # Need arch equivalent package for "xutils-dev"
-yes | pacman -S go
-yes | pacman -S curl
-yes | pacman -S jq
-yes | pacman -S nfs-utils
-yes | pacman -S smbclient
-yes | pacman -S perl-lwp-protocol-https
+yes | sudo pacman -S xdg-utils
+yes | sudo pacman -S cargo --noconfirm #This package has 2 install candidates this insures the install of the default option
+yes | sudo pacman -S python-yaml
+yes | sudo pacman -S hping
+yes | sudo pacman -S python2
+yes | sudo pacman -S python3
+yes | sudo pacman -S xorg-xprop libx11 imagemagick libxext xspy
+yes | sudo pacman -S go
+yes | sudo pacman -S curl
+yes | sudo pacman -S jq
+yes | sudo pacman -S nfs-utils
+yes | sudo pacman -S smbclient
+yes | sudo pacman -S perl-lwp-protocol-https
 yes | git clone https://github.com/tijme/angularjs-csti-scanner.git
 yes | git clone https://github.com/maxwellkoh/2FAssassin.git
 yes | git clone https://github.com/ticarpi/jwt_tool.git
@@ -144,24 +144,24 @@ yes | git clone https://github.com/haroonawanofficial/cobra.git
 yes | git clone https://github.com/haroonawanofficial/maahro.git
 yes | git clone https://github.com/haroonawanofficial/ShaheenX.git
 yes | git clone https://github.com/haroonawanofficial/vasl.git
-yes | pacman -S nmap
-#yes | pacman -s xrdp - This package is only available in the AUR, need a workaround
-yes | pacman -S python2-pip # PIP2 package
-yes | pacman -S python-pip # PIP3 package
-yes | pacman -S python-setuptools
-yes | pip install setuptools
-python setup.py install
+yes | sudo pacman -S nmap
+#yes | sudo pacman -s xrdp - This package is only available in the AUR, need a workaround
+yes | sudo pacman -S python2-pip # PIP2 package
+yes | sudo pacman -S python-pip # PIP3 package
+yes | sudo pacman -S python-setuptools
+yes | sudo pip install setuptools
+sudo python setup.py install
 
-pip install jsbeautifier
-pip install argparse
-pip install requests
-pip install request
-pip install colorlog
-chmod -R 755 *
-chmod u+x *.sh
-cp * -r /usr/share/tishna
-cp *.sh /usr/share/tishna
-chmod -R 755 /usr/share/tishna
+sudo pip install jsbeautifier
+sudo pip install argparse
+sudo pip install requests
+sudo pip install request
+sudo pip install colorlog
+sudo chmod -R 755 *
+sudo chmod u+x *.sh
+sudo cp * -r /usr/share/tishna
+sudo cp *.sh /usr/share/tishna
+sudo chmod -R 755 /usr/share/tishna
 
 if [ -d "/usr/share/tishna" ] ;
 then
