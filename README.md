@@ -42,7 +42,7 @@ EULA
 - git clone https://github.com/haroonawanofficial/Tishna.git
 - cd Tishna
 - sudo chmod u+x *.sh
-- ./Kali_Installer.sh
+- ./tishna_kali_installer.sh
 - Tishna will integrate as system software
 - Dependencies will be handled automatically
 - Third party software(s)/dependencies/modules will be handled automatically
